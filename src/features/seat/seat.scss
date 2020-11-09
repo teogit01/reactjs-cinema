@@ -1,0 +1,178 @@
+.wrap-page-seat {
+
+    .page-main {
+        .title {
+            display: flex;
+            justify-content: space-between;
+
+            .select-room {
+                width: 400px;
+            }
+        }
+
+        &__content {
+            display: flex;
+
+            &--left {
+                width: 50%;
+
+                .screen {
+                    width: 100%;
+
+                    .name {
+                        text-align: center;
+                        position: relative;
+                        top: 5px;
+                        font-weight: bold;
+                    }
+
+                    .item {
+                        --width: 50%;
+                        height: 5px;
+                        background-color: black;
+                        opacity: .7;
+                        border-radius: 5px;
+                    }
+                }
+
+                .list-seat {
+                    --width: 50%;
+                    --background-color: red;
+                    --text-align: center;
+
+                    .add-column {
+                        text-align: right;
+                    }
+
+                    .per-row {
+                        display: flex;
+                        align-items: flex-end;
+                        justify-content: center;
+
+                        .select-type-seat {
+                            margin-right: 10px;
+                            height: 20px;
+                        }
+
+                        .ROW {
+                            font-weight: bold;
+                            margin-right: 10px;
+                        }
+
+                        .seat {
+
+                            width: 23px;
+                            height: 23px;
+                            border-radius: 5px;
+                            background-color: #C8CCB8;
+                            border: 2px solid #C8CCB8;
+                            margin: 2px;
+
+                            &:hover {
+                                border: 2px solid #999;
+                                cursor: pointer;
+                            }
+
+                        }
+
+                        .index-column {
+                            text-align: right;
+                            font-weight: bold;
+                            width: 23px;
+                            height: 23px;
+                            border-radius: 5px;
+                            margin: 10px 2px 2px 2px;
+                        }
+
+                        .mr-20 {
+                            margin-right: 20px;
+                        }
+
+                    }
+
+                    .column {
+                        right: 10px;
+
+                    }
+                }
+            }
+
+            &--right {
+
+                width: 50%;
+                height: 500px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+
+                .explain {
+                    &--item {
+                        display: flex;
+                        align-items: center;
+
+                        .color {
+                            width: 25px;
+                            height: 25px;
+                            border-radius: 5px;
+                            margin: 10px 25px 10px 10px;
+                        }
+
+                        .color-set-type {
+                            width: 25px;
+                            height: 25px;
+                            border-radius: 5px;
+                            margin: 10px 25px 10px 10px;
+
+                            &:hover {
+                                cursor: pointer;
+                                border: 2px solid #111;
+                            }
+                        }
+
+                        .selected {
+                            border: 2px solid #111;
+                        }
+
+                        .name {
+                            font-weight: bold;
+                            width: 100px;
+                            margin: 10px 20px 10px 10px;
+                        }
+
+                        .price {
+                            font-weight: bold;
+                            border: none;
+                            background-color: #fff;
+                            border: 1px solid #fff;
+
+                            &:focus {
+                                outline: none;
+                            }
+                        }
+
+                        .showInput {
+                            border-bottom: 1px solid #ddd;
+                        }
+                    }
+
+                }
+
+                //function 
+                .function {
+                    label {
+                        width: 100%;
+                        font-weight: bold;
+                    }
+                }
+            }
+        }
+    }
+
+    .show {
+        visibility: visible;
+    }
+
+    .hide {
+        visibility: hidden;
+    }
+}

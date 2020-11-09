@@ -1,0 +1,84 @@
+.wrap-theater {
+  --width: 50%;
+}
+.wrap-theater .theater_title {
+  --width: 97em;
+}
+.wrap-theater .theater_list {
+  padding: 0 20px;
+  display: flex;
+  flex-wrap: wrap;
+  --width: 100%;
+  --overflow: scroll;
+  border-bottom: 1px solid #ddd;
+}
+.wrap-theater .theater_list--item {
+  font-size: 16px;
+  margin-bottom: 10px;
+  width: 100%;
+  height: 35px;
+  display: flex;
+  align-items: center;
+  --overflow: hidden;
+  background-color: red;
+  --box-shadow: 1px 1px 3px #999;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  background-color: #fff;
+  transition: all 0.3s;
+}
+.wrap-theater .theater_list--item .overflow {
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.wrap-theater .theater_list--item .ta {
+  background-color: red;
+}
+.wrap-theater .theater_list--item:hover {
+  border: 1px solid #111;
+  cursor: pointer;
+}
+.wrap-theater .theater_list--item form {
+  width: 95%;
+}
+.wrap-theater .theater_list--item form .add {
+  padding: 0 2%;
+  width: 100%;
+  border: none;
+}
+.wrap-theater .theater_list--item form .add:focus {
+  outline: none;
+}
+.wrap-theater .head {
+  font-weight: bold;
+}
+.wrap-theater .form {
+  font-size: 16px;
+}
+.wrap-theater .form form {
+  width: 80%;
+  padding: 15px 0px;
+  border-radius: 5px;
+  margin: 0 auto;
+  box-shadow: 5px 5px 15px #ddd;
+}
+.wrap-theater .form form .city {
+  display: flex;
+  width: 50%;
+  margin-top: 10px;
+}
+.wrap-theater .page-detail .rooms {
+  display: flex;
+  align-items: center;
+  height: 35px;
+}
+.wrap-theater .page-detail .rooms:hover {
+  cursor: pointer;
+  font-weight: bold;
+  border-radius: 4px;
+  color: green;
+}
+.wrap-theater .page-detail .film {
+  background-color: red;
+  height: 350px;
+}

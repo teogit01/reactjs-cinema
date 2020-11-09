@@ -1,0 +1,324 @@
+.wrap-showtime {
+    --width: 93%;
+    --max-width: 90%;
+
+    .page-main {
+
+        &__content {
+            border: 1px solid #ddd;
+            display: flex;
+            border-radius: 5px;
+
+            .filter {
+                width: 100%;
+                height: 600px;
+                --border-radius: 5px;
+                display: flex;
+
+                .branchs {
+                    width: 10%;
+                    height: 580px;
+                    padding: 10px 10px;
+                    border-right: 1px solid #ddd;
+                    margin-top: 10px;
+
+                    .branch {
+                        width: 100%;
+                        height: 100px;
+                        margin-bottom: 5px;
+                        border-bottom: 1px solid #ddd;
+
+                        &__item {
+                            height: 100%;
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+                            font-weight: bold;
+
+                            opacity: .5;
+                            --border-bottom: 1px solid #ddd;
+
+                            &:hover {
+                                cursor: pointer;
+                                opacity: 1;
+                            }
+
+                            .actived {
+                                opacity: 1;
+                            }
+
+                        }
+
+                        &:last-child {
+                            border-bottom: none;
+                        }
+
+                        &:first-child {
+                            margin-top: -10px;
+                        }
+
+                    }
+
+                    .actived {
+                        opacity: 1;
+                    }
+                }
+
+                .theaters {
+                    width: 30%;
+                    height: 580px;
+                    padding: 10px 10px;
+                    border-right: 1px solid #ddd;
+                    margin-top: 10px;
+
+                    .theater {
+                        width: 100%;
+                        overflow: auto;
+                        margin-bottom: 5px;
+                        border-bottom: 1px solid #ddd;
+
+                        &__item {
+                            height: 90px;
+                            display: flex;
+                            align-items: center;
+                            width: 100%;
+                            opacity: .7;
+
+                            .img {
+                                width: 70px;
+                                height: 70px;
+                                border: 1px solid #ddd;
+                                margin-right: 10px;
+                            }
+
+                            .infor {
+                                display: flex;
+                                flex-direction: column;
+                                justify-content: center;
+                            }
+
+                        }
+
+
+                        &:last-child {
+                            border-bottom: none;
+                        }
+
+                        &:hover {
+                            cursor: pointer;
+                            opacity: 1;
+                            font-weight: bold;
+                        }
+
+                        .actived {
+                            opacity: 1;
+                            font-weight: bold;
+                        }
+                    }
+                }
+
+                .infor-showtime {
+                    width: 60%;
+                    height: 580px;
+                    padding: 10px 10px;
+                    border-right: 1px solid #ddd;
+                    margin-top: 10px;
+
+                    // head
+                    .schedule {
+                        width: 100%;
+                        display: flex;
+                        overflow: auto;
+
+                        &__head {
+                            display: flex;
+                            --max-width: 100%;
+                            --width: 100%;
+                            height: 90px;
+                            border-bottom: 1px solid #ddd;
+
+                            &__item {
+                                width: 120px;
+                                box-shadow: 2px 2px 5px #ddd;
+                                border-radius: 5px;
+                                border: 1px solid #fff;
+
+                                height: 90%;
+                                overflow-x: scroll;
+                                margin-right: 5px;
+
+                                display: flex;
+                                flex-direction: column;
+                                justify-content: center;
+                                align-items: center;
+
+                                .bold {
+                                    font-weight: bold;
+                                }
+                            }
+
+                            .opacity-5 {
+                                opacity: .4;
+                            }
+
+                            .actived {
+                                border: 1px solid green;
+                            }
+
+                            .none {
+                                display: none;
+                            }
+
+                            .display {
+                                display: block;
+                            }
+
+                            &:hover {
+                                cursor: pointer;
+                            }
+                        }
+                    }
+
+                    .showtime {
+                        width: 100%;
+                        height: 450px;
+                        overflow: auto;
+
+                        &--item {
+                            width: 100%;
+                            border-bottom: 1px solid #ddd;
+                            margin-top: 15px;
+
+                            &__film {
+                                width: 100%;
+                                height: 80px;
+                                display: flex;
+
+                                .img {
+                                    width: 80px;
+                                    height: 80px;
+                                    border: 1px solid #ddd;
+                                    margin-right: 10px;
+                                }
+
+                                .film {
+                                    display: flex;
+                                    flex-direction: column;
+                                    width: 100%;
+                                    height: 80px;
+                                    justify-content: flex-end;
+
+                                    .type-film {
+                                        font-weight: bold;
+                                        font-size: 16px;
+                                    }
+
+                                    .remove {
+                                        width: 90%;
+                                        font-size: 20px;
+                                        display: flex;
+                                        justify-content: flex-end;
+
+                                        .icon-remove {
+                                            width: 20px;
+                                            font-weight: bold;
+                                            visibility: hidden;
+                                        }
+                                    }
+
+                                    &:hover .icon-remove {
+                                        visibility: visible;
+                                    }
+
+                                    &:hover {
+                                        cursor: pointer;
+                                    }
+                                }
+                            }
+
+                            &__show {
+                                margin-top: 10px;
+                                width: 100%;
+                                display: flex;
+                                flex-wrap: wrap;
+
+                                .show {
+                                    width: 135px;
+                                    height: 35px;
+                                    margin: 0 10px 5px 0;
+                                    display: flex;
+                                    justify-content: center;
+                                    align-items: center;
+                                    background-color: #ddd;
+                                    border-radius: 5px;
+
+                                    .start {
+                                        font-size: 17px;
+                                        font-weight: bold;
+                                        color: forestgreen;
+                                    }
+
+                                    .end {
+                                        font-size: 17px;
+                                        font-weight: bold;
+                                    }
+
+                                    &:hover {
+                                        cursor: pointer;
+                                    }
+
+                                    &:hover .start {
+                                        color: red;
+                                    }
+                                }
+
+                                .show-add {
+                                    padding: 8px 0 0 0px;
+                                }
+
+                                .fs-16 {
+                                    font-size: 20px;
+
+                                }
+                            }
+                        }
+
+                    }
+
+                }
+            }
+
+        }
+    }
+
+
+    .show {
+        visibility: visible;
+    }
+
+    .hide {
+        visibility: hidden;
+    }
+}
+
+.modal-style {
+    font-size: 15px;
+
+    .control {
+        display: flex;
+        margin-bottom: 5px;
+
+        label {
+            font-weight: bold;
+            width: 150px;
+            display: flex;
+            align-items: flex-end;
+        }
+
+        select {
+            width: 300px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+    }
+}

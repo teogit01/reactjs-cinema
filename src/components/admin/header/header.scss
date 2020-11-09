@@ -1,0 +1,15 @@
+.header {
+    position: fixed;
+    width: 100%;
+    height: 75px;
+    top: 0px;
+    box-shadow: 6px 1px 6px #dddd;
+    background-color: #fff;
+    z-index: 1;
+
+    --border: 1px solid black;
+
+    --margin-bottom: 75px;
+    --margin: 100px;
+    --background-color: red;
+}

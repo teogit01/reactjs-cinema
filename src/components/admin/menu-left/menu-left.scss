@@ -1,0 +1,106 @@
+.menu-left {
+
+    // display: flex;
+    margin-top: 75px;
+    // --width: 90%;    
+
+    .wrap-menu {
+
+        background-color: #fff;
+        z-index: 1;
+        --display: flex;
+        position: fixed;
+        width: 110px;
+        top: 75px;
+        margin-right: 10px;
+
+        ul {
+            padding: 0px;
+            width: 95%;
+            box-shadow: 6px 1px 6px #dddd;
+            border-radius: 10px;
+
+            list-style-type: none;
+            overflow: scroll;
+            height: 600px;
+
+            li {
+                display: flex;
+                justify-content: flex-start;
+                align-items: center;
+                color: black;
+
+                height: 117px;
+                width: 100%;
+                margin: 0;
+                border-bottom: 1px solid #dddd;
+
+                .scroll {
+                    width: 5px;
+                    --background-color: #8DA1B9;
+                    background-color: #fff;
+                    height: 90%;
+                    border-radius: 5px;
+                    --margin-right: 25px;
+                }
+
+                .control-ic-label {
+                    display: flex;
+                    width: 100%;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
+                }
+
+                &:hover .ic {
+                    color: #B68CB8;
+                    text-decoration: none;
+                }
+
+                &:hover .scroll {
+                    background-color: #8DA1B9;
+                    opacity: 0.3;
+                }
+            }
+
+            .active .scroll {
+                background-color: #8DA1B9;
+            }
+        }
+    }
+
+    .content {
+        width: 97em;
+        --width: 100%;
+        margin: 0 10px 0 120px;
+        padding-top: 10px;
+    }
+
+    .active .ic {
+        color: #B68CB8;
+    }
+}
+
+.ic {
+    font-size: 50px;
+    color: #95ADB6;
+}
+
+.ic-black {
+    font-size: 30px;
+    color: #454545;
+    opacity: 0.5;
+
+    position: fixed;
+    right: 100px;
+    top: 100px;
+
+    &:hover {
+        cursor: pointer;
+    }
+}
+
+/* width */
+::-webkit-scrollbar {
+    width: 0px;
+}
