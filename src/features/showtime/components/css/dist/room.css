@@ -1,0 +1,7 @@
+.room {
+  width: 100%;
+}
+.room .room-seats {
+  width: 100%;
+  min-height: 500px;
+}

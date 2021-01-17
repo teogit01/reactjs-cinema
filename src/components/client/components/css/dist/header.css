@@ -1,0 +1,97 @@
+.client-header {
+  height: 60px;
+  z-index: 1;
+}
+.client-header .header-content {
+  position: fixed;
+  width: 100%;
+  height: 60px;
+  background-color: #fff;
+  box-shadow: 6px 1px 6px #dddd;
+  top: 0px;
+  opacity: 0.9;
+  display: flex;
+  align-items: center;
+  z-index: 1;
+}
+.client-header .header-content .logo {
+  width: 30%;
+}
+.client-header .header-content .menu {
+  width: 40%;
+  display: flex;
+  justify-content: center;
+  height: 100%;
+  align-items: center;
+}
+.client-header .header-content .menu .menu__item {
+  font-weight: bold;
+  margin-left: 20px;
+  font-size: 16px;
+  transition: 0.3s;
+}
+.client-header .header-content .menu .menu__item:hover {
+  cursor: pointer;
+  color: #d32f2f;
+}
+.client-header .header-content .control {
+  width: 30%;
+  display: flex;
+  padding: 15px 0px;
+}
+.client-header .header-content .control .control__login {
+  width: 80%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  padding: 0 10px;
+  border-right: 1px solid #999;
+}
+.client-header .header-content .control .control__login .ic {
+  font-size: 26px;
+  margin-right: 10px;
+}
+.client-header .header-content .control .control__login:hover {
+  cursor: pointer;
+}
+.client-header .header-content .control .control__location {
+  width: 60%;
+  display: flex;
+  align-items: center;
+  margin-left: 10px;
+}
+.client-header .header-content .control .control__location .ic {
+  font-size: 16px;
+  margin-right: 10px;
+}
+.client-header .header-content .control .control__location .ic-down {
+  margin-left: 20px;
+}
+.client-header .header-content .control .control__location:hover {
+  cursor: pointer;
+}
+.client-header .branch {
+  position: fixed;
+  width: 160px;
+  height: 230px;
+  overflow: auto;
+  border-radius: 5px;
+  padding: 10px 0;
+  right: 0px;
+  top: 70px;
+  background-color: #fff;
+  box-shadow: 1px 1px 10px #ddd;
+  z-index: 1;
+}
+.client-header .branch-item {
+  text-align: left;
+  margin-bottom: 10px;
+  width: 100%;
+  padding-left: 15px;
+  transition: 0.2s;
+}
+.client-header .branch-item:hover {
+  background-color: #ddd;
+  font-weight: bold;
+  cursor: pointer;
+}

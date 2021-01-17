@@ -1,0 +1,121 @@
+.input {
+  width: 100%;
+  height: 35px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  transition: all 0.3s;
+}
+.input:hover {
+  border: 1px solid #999;
+}
+
+.textarea {
+  width: 100%;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  transition: all 0.3s;
+}
+.textarea:hover {
+  border: 1px solid #999;
+}
+
+.app {
+  margin: 0px;
+  padding: 0px;
+  font-family: "Courier New", Courier, monospace;
+  font-size: 15px;
+  width: 100%;
+  --background-color: #eee;
+  --position: relative;
+  --height: 100px;
+}
+.app .alert {
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+.app .alert-none {
+  display: none;
+}
+.app .hover:hover {
+  cursor: pointer;
+}
+.app .admin {
+  width: 90%;
+}
+.app .admin .content {
+  width: 100%;
+}
+.app .client .content {
+  margin-top: 65px;
+}
+.app .op-5 {
+  opacity: 0.5;
+}
+.app .btn {
+  width: 120px;
+}
+.app .input-error {
+  height: 35px;
+}
+.app .input-error::-webkit-input-placeholder {
+  /* WebKit, Blink, Edge */
+  color: red;
+}
+.app .input-error::-webkit-input-placeholder:focus::-webkit-input-placeholder {
+  /* WebKit, Blink, Edge */
+  color: blue;
+}
+.app .hr {
+  width: 100%;
+}
+.app .date {
+  width: 32.5em;
+}
+.app .d {
+  width: 43.5em;
+}
+.app .button {
+  display: flex;
+  justify-content: flex-end;
+  padding-right: 30px;
+}
+.app .button .btn {
+  margin-left: 5px;
+}
+.app .hover {
+  cursor: pointer;
+}
+.app .mr-20 {
+  margin-right: 20px;
+}
+.app .center {
+  text-align: center;
+}
+.app .white {
+  background-color: #fff;
+  color: #fff;
+}
+.app .normal {
+  background-color: #7C9885;
+  color: #7C9885;
+}
+.app .medium {
+  background-color: #28666E;
+  color: #28666E;
+}
+.app .vip {
+  background-color: #FEDC97;
+  color: #FEDC97;
+}
+.app .w90 {
+  width: 90%;
+}
+.app .ic-init {
+  font-size: 16px;
+  opacity: 0.5;
+}
+.app .ic-init:hover {
+  cursor: pointer;
+}

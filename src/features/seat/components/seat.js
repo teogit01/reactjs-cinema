@@ -7,7 +7,8 @@ Seat.propTypes = {
     length: PropTypes.number, // 
     index: PropTypes.number, // 
     child: PropTypes.string,
-    isDamaged: PropTypes.bool
+    isDamaged: PropTypes.bool,
+    name: PropTypes.string
 
     //handleSetSeatDamged: PropTypes.func
 };
@@ -16,7 +17,6 @@ Seat.defaultProp = {
     length: 0,
     child: '',
     type: '',
-    isDamaged: false
     //handleSetSeatDamged: null
 }
 
@@ -30,7 +30,7 @@ const background = [
 
 function Seat(props) {
 
-    const { type, length, index, isDamaged } = props
+    const { type, length, index, isDamaged, name } = props
 
     const idx = background.findIndex(item => {
         if (item.type === type) {

@@ -9,8 +9,6 @@ import SelectField from 'components/custom-field/select-field'
 import TextField from 'components/custom-field/text-field.js'
 
 import { initiaValues } from 'assets/constant/theater'
-import { useDispatch } from 'react-redux';
-import { addTheater } from './../theaterSlice'
 import callApi from 'api/apiCaller';
 //import { validationSchema } from 'assets/validations/valid-theater'
 // import callApi from 'api/apiCaller';
@@ -18,7 +16,6 @@ import callApi from 'api/apiCaller';
 function FormAdd(props) {
     const { optionsBranch } = props
     const history = useHistory()
-    const dispatch = useDispatch()
     const goBack = () => {
         history.goBack()
     }
@@ -34,7 +31,7 @@ function FormAdd(props) {
         // call api sumit add
         callApi('theater', 'POST', values).then(() => {
             //add store 
-            dispatch(addTheater(values))
+            //dispatch(addTheater(values))
             history.goBack()
         })
     }

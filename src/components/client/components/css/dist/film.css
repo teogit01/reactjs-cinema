@@ -1,0 +1,132 @@
+.list-film {
+  margin-top: 40px;
+  --width: 108em;
+  height: 900px;
+}
+.list-film .control-film {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.list-film .control-film h4 {
+  margin-right: 20px;
+  font-weight: bold;
+  transition: 0.05s;
+}
+.list-film .control-film h4:hover {
+  cursor: pointer;
+  transform: scale(1.2);
+}
+.list-film .control-film .actived {
+  color: red;
+}
+.list-film .main-film {
+  width: 100%;
+  display: flex;
+}
+.list-film .main-film .show-film {
+  width: 100%;
+  height: 800px;
+  margin: 0 auto;
+  padding-left: 10px;
+}
+.list-film .main-film .show-film .carousel {
+  height: 800px;
+  width: 90%;
+  border: none;
+  outline: none;
+}
+.list-film .main-film .show-film .carousel-item {
+  width: 100%;
+  height: 800px;
+  display: flex;
+  flex-wrap: wrap;
+  outline: none;
+}
+.list-film .main-film .show-film .film-item {
+  width: 215px;
+  height: 390px;
+  border-radius: 10px;
+  margin-left: 5px;
+  margin-right: 10px;
+  margin-bottom: 10px;
+}
+.list-film .main-film .show-film .film-item .film {
+  width: 215px;
+  height: 320px;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+.list-film .main-film .show-film .film-item .film .film-background {
+  height: 100%;
+  background: linear-gradient(180deg, rgba(245, 244, 244, 0.0690651261) 0%, rgba(27, 25, 25, 0.287552521) 32%, rgba(0, 0, 0, 0.9150035014) 90%);
+  opacity: 0;
+  transition: 0.2s;
+  border-radius: 10px;
+}
+.list-film .main-film .show-film .film-item .film .film-background .play {
+  display: flex;
+  --width: 100px;
+  position: relative;
+  top: 40%;
+  left: 40%;
+  opacity: 0.6;
+  transition: 0.2s;
+}
+.list-film .main-film .show-film .film-item .film .film-background .play:hover {
+  opacity: 0.3;
+  cursor: pointer;
+  top: 40.5%;
+}
+.list-film .main-film .show-film .film-item .film-info {
+  width: 215px;
+  height: 50px;
+}
+.list-film .main-film .show-film .film-item .film-info .button {
+  position: relative;
+  width: 100%;
+  height: 45px;
+  top: -40px;
+  font-size: 18px;
+  font-weight: bold;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5px;
+  color: white;
+  background-color: #DB1D1A;
+  opacity: 0;
+}
+.list-film .main-film .show-film .film-item:hover .film {
+  --opacity: .5;
+}
+.list-film .main-film .show-film .film-item:hover .film-background {
+  opacity: 1;
+}
+.list-film .main-film .show-film .film-item:hover .button {
+  opacity: 1;
+}
+.list-film .main-film .next {
+  display: flex;
+  width: 15%;
+  justify-content: flex-start;
+  --align-items: center;
+  margin-top: 25%;
+  font-size: 45px;
+  opacity: 0.5;
+}
+.list-film .main-film .next:hover {
+  cursor: pointer;
+}
+.list-film .main-film .back {
+  display: flex;
+  width: 15%;
+  justify-content: flex-end;
+  --align-items: center;
+  margin-top: 25%;
+  font-size: 45px;
+  opacity: 0.5;
+}
+.list-film .main-film .back:hover {
+  cursor: pointer;
+}

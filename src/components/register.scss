@@ -1,0 +1,117 @@
+.register {
+    width: 100%;
+    height: 780px;
+    background-image: url('./client/img/backapp.jpg');
+
+    display: flex;
+    align-items: center;
+
+    .register-main {
+        width: 50%;
+        min-height: 550px;
+        margin: 0 auto;
+        position: relative;
+
+        .bg {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            background-color: rgb(29, 79, 95);
+            opacity: .6;
+            z-index: 0;
+            border-radius: 5px;
+        }
+
+        .content {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            color: #fff;
+            z-index: 1;
+
+            .title {
+                width: 100%;
+                height: 170px;
+
+                text-align: center;
+
+                img {
+                    transform: scale(0.4);
+                }
+            }
+
+            .form-register {
+                width: 100%;
+                height: 350px;
+
+                .form {
+                    width: 60%;
+                    margin: 0 auto;
+
+                    .control {
+                        label {
+                            font-weight: bold;
+                            font-size: 14px;
+                            //color: #BC412B;
+                        }
+
+                        input {
+                            border: none;
+                            width: 100%;
+                            height: 35px;
+                            border-radius: 5px;
+                            //background-color: rgb(116, 155, 161);
+                            background-color: #ddd;
+                            color: black;
+                            font-weight: bold;
+
+                            &:focus {
+                                outline: none;
+                            }
+                        }
+                    }
+
+                    .control-button {
+                        width: 100%;
+                        display: flex;
+                        //justify-content: flex-end;
+                        justify-content: center;
+
+                        .button {
+                            //width: 150px;
+                            width: 50%;
+                            height: 35px;
+                            border-radius: 5px;
+                            border: 1px solid #eee;
+                            margin-left: 5px;
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+                            color: #fff;
+                            font-weight: bold;
+
+                            &:hover {
+                                cursor: pointer;
+                                background-color: lightseagreen;
+                                opacity: .7;
+                                color: black;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .ic {
+        font-size: 22px;
+        opacity: 1;
+        position: absolute;
+        right: 5px;
+        top: 5px;
+
+        &:hover {
+            cursor: pointer;
+        }
+    }
+}

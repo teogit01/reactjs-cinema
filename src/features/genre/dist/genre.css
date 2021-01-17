@@ -1,0 +1,79 @@
+.feature-genre .page-main {
+  width: 100%;
+}
+.feature-genre .page-main .main {
+  display: flex;
+  padding: 10px;
+  min-height: 500px;
+}
+.feature-genre .page-main .main .genres,
+.feature-genre .page-main .main .countrys {
+  width: 50%;
+  padding: 10px;
+}
+.feature-genre .page-main .main .genres .form-add,
+.feature-genre .page-main .main .countrys .form-add {
+  margin-bottom: 10px;
+}
+.feature-genre .page-main .main .genres .form-add input,
+.feature-genre .page-main .main .countrys .form-add input {
+  border: none;
+  border-bottom: 1px solid #ddd;
+  width: 80%;
+}
+.feature-genre .page-main .main .genres .form-add input:focus,
+.feature-genre .page-main .main .countrys .form-add input:focus {
+  outline: none;
+}
+.feature-genre .page-main .main .genres .list .genre-item,
+.feature-genre .page-main .main .genres .list .country-item,
+.feature-genre .page-main .main .countrys .list .genre-item,
+.feature-genre .page-main .main .countrys .list .country-item {
+  display: flex;
+  height: 30px;
+}
+.feature-genre .page-main .main .genres .list .genre-item:hover,
+.feature-genre .page-main .main .genres .list .country-item:hover,
+.feature-genre .page-main .main .countrys .list .genre-item:hover,
+.feature-genre .page-main .main .countrys .list .country-item:hover {
+  cursor: pointer;
+}
+.feature-genre .page-main .main .genres .list .genre-item .genre-stt,
+.feature-genre .page-main .main .genres .list .genre-item .country-stt,
+.feature-genre .page-main .main .genres .list .country-item .genre-stt,
+.feature-genre .page-main .main .genres .list .country-item .country-stt,
+.feature-genre .page-main .main .countrys .list .genre-item .genre-stt,
+.feature-genre .page-main .main .countrys .list .genre-item .country-stt,
+.feature-genre .page-main .main .countrys .list .country-item .genre-stt,
+.feature-genre .page-main .main .countrys .list .country-item .country-stt {
+  width: 60px;
+}
+.feature-genre .page-main .main .genres .list .genre-item .genre-name,
+.feature-genre .page-main .main .genres .list .genre-item .country-name,
+.feature-genre .page-main .main .genres .list .country-item .genre-name,
+.feature-genre .page-main .main .genres .list .country-item .country-name,
+.feature-genre .page-main .main .countrys .list .genre-item .genre-name,
+.feature-genre .page-main .main .countrys .list .genre-item .country-name,
+.feature-genre .page-main .main .countrys .list .country-item .genre-name,
+.feature-genre .page-main .main .countrys .list .country-item .country-name {
+  width: 300px;
+}
+.feature-genre .page-main .main .genres .list .show,
+.feature-genre .page-main .main .countrys .list .show {
+  visibility: visible;
+}
+.feature-genre .page-main .main .genres .list .none,
+.feature-genre .page-main .main .countrys .list .none {
+  visibility: hidden;
+}
+.feature-genre .page-main .genres {
+  border-right: 1px solid #ddd;
+}
+.feature-genre .page-main .ic-add {
+  color: #bbb;
+  margin-top: -50px;
+  font-size: 20px;
+}
+.feature-genre .page-main .ic-add:hover {
+  cursor: pointer;
+}

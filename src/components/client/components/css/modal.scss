@@ -1,0 +1,61 @@
+.wrap-modal {
+    position: relative;
+    top: 150px;
+
+    .style-modal {
+        min-height: 300px;
+        padding: 20px;
+
+        textarea {
+            width: 100%;
+            height: 80px;
+            border-radius: 5px;
+            border: 1px solid #ddd;
+
+            &:focus {
+                --outline-color: red;
+                outline: none;
+                box-shadow: 0px 0px 5px red;
+            }
+        }
+
+        .point {
+            font-size: 40px;
+            color: #7ed321;
+            font-weight: bold;
+            text-align: center;
+        }
+
+        .star {
+            text-align: center;
+
+            .star-item {
+                opacity: .5;
+                width: 40px;
+                padding: 0 2px;
+            }
+
+            &:hover {
+                cursor: pointer;
+            }
+
+            .actived {
+                opacity: 1;
+            }
+
+            margin-bottom: 10px;
+        }
+
+        .button {
+            width: 100%;
+            text-align: right;
+            margin-top: 10px;
+
+            .dang {
+                width: 130px;
+                color: #fff;
+                background-color: red;
+            }
+        }
+    }
+}

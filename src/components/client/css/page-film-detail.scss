@@ -1,0 +1,22 @@
+.page-film-detail {
+    width: 100%;
+    min-height: 500px;
+
+    //background-color: blue;
+    .alert {
+        width: 100%;
+        min-height: 60px;
+        text-align: center;
+        //background-color: red;
+        z-index: 1;
+        position: fixed;
+        font-weight: bold;
+        //top: 60px;
+        display: none;
+    }
+
+    .show {
+        display: block;
+    }
+
+}

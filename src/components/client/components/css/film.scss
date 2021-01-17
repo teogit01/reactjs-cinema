@@ -1,0 +1,165 @@
+.list-film {
+    margin-top: 40px;
+    --width: 108em;
+    height: 900px;
+
+    .control-film {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        h4 {
+            margin-right: 20px;
+            font-weight: bold;
+            transition: .05s;
+
+            &:hover {
+                cursor: pointer;
+                // font-size: 28px;
+                transform: scale(1.2);
+            }
+        }
+
+        .actived {
+            color: red;
+        }
+
+    }
+
+    .main-film {
+        width: 100%;
+        display: flex;
+
+        .show-film {
+            // component Film                        
+            width: 100%;
+            height: 800px;
+            margin: 0 auto;
+
+            .carousel {
+                height: 800px;
+                width: 90%;
+                border: none;
+                outline: none;
+
+                &-item {
+                    width: 100%;
+                    height: 800px;
+                    display: flex;
+                    flex-wrap: wrap;
+                    outline: none;
+                }
+            }
+
+            padding-left: 10px;
+
+            .film-item {
+                width: 215px;
+                height: 390px;
+                border-radius: 10px;
+                margin-left: 5px;
+                margin-right: 10px;
+                margin-bottom: 10px;
+
+                .film {
+                    width: 215px;
+                    height: 320px;
+                    border-radius: 5px;
+                    margin-bottom: 10px;
+
+                    .film-background {
+                        height: 100%;
+                        background: linear-gradient(180deg, rgba(245, 244, 244, 0.06906512605042014) 0%, rgba(27, 25, 25, 0.28755252100840334) 32%, rgba(0, 0, 0, 0.9150035014005602) 90%);
+                        opacity: 0;
+                        transition: .2s;
+                        border-radius: 10px;
+
+                        .play {
+                            display: flex;
+                            --width: 100px;
+                            position: relative;
+                            top: 40%;
+                            left: 40%;
+                            opacity: .6;
+
+                            transition: .2s;
+
+                            &:hover {
+                                opacity: .3;
+                                cursor: pointer;
+                                top: 40.5%;
+                            }
+                        }
+
+                    }
+                }
+
+
+                .film-info {
+                    width: 215px;
+                    height: 50px;
+
+                    .button {
+                        position: relative;
+                        width: 100%;
+                        height: 45px;
+                        top: -40px;
+                        font-size: 18px;
+                        font-weight: bold;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+
+                        border-radius: 5px;
+                        color: white;
+                        background-color: #DB1D1A;
+                        opacity: 0;
+                    }
+                }
+
+                &:hover .film {
+                    --opacity: .5;
+                }
+
+                &:hover .film-background {
+                    opacity: 1;
+                }
+
+                &:hover .button {
+                    opacity: 1;
+                }
+            }
+
+        }
+
+        .next {
+            display: flex;
+            width: 15%;
+            justify-content: flex-start;
+            --align-items: center;
+            margin-top: 25%;
+
+            font-size: 45px;
+            opacity: .5;
+
+            &:hover {
+                cursor: pointer;
+            }
+        }
+
+        .back {
+            display: flex;
+            width: 15%;
+            justify-content: flex-end;
+            --align-items: center;
+            margin-top: 25%;
+
+            font-size: 45px;
+            opacity: .5;
+
+            &:hover {
+                cursor: pointer;
+            }
+        }
+    }
+}

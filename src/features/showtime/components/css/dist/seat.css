@@ -1,0 +1,99 @@
+.seats {
+  width: 100%;
+}
+.seats .index-column {
+  display: flex;
+  margin-left: 24px;
+  justify-content: center;
+}
+.seats .index-column .ic {
+  opacity: 0.6;
+  color: black;
+  font-size: 14px;
+  margin-top: 1px;
+}
+.seats .index-column .ic:hover {
+  cursor: pointer;
+}
+.seats .index-column .col-item {
+  width: 25px;
+  height: 25px;
+  margin: 2px;
+  text-align: center;
+  border-radius: 3px;
+}
+.seats .index-column .pagin {
+  margin-right: 20px;
+}
+.seats .index-column .used {
+  background-color: red;
+}
+.seats .rows .per-row {
+  display: flex;
+  justify-content: center;
+}
+.seats .rows .per-row .row-item .index-row {
+  width: 25px;
+  height: 25px;
+  border-radius: 3px;
+  margin: 2px;
+}
+.seats .rows .per-row .row-item .row {
+  display: flex;
+  justify-content: flex-end;
+  justify-content: center;
+}
+.seats .rows .per-row .seat {
+  width: 25px;
+  height: 25px;
+  background-color: #88A09E;
+  margin: 2px;
+  border-radius: 3px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #ddd;
+}
+.seats .rows .per-row .seat:hover {
+  cursor: pointer;
+  border: 2px solid black;
+}
+.seats .rows .per-row .pagin {
+  margin-right: 20px;
+}
+.seats .rows .per-row .seat-couple {
+  background-color: #F6DB79;
+  width: 54px;
+}
+.seats .notes {
+  background-color: #fff;
+  width: 100%;
+  width: 100%;
+}
+.seats .notes .note-detail {
+  display: flex;
+  width: 100%;
+}
+.seats .notes .note-detail .note-item {
+  width: 100%;
+  display: flex;
+  margin-bottom: 10px;
+  text-align: center;
+  justify-content: center;
+}
+.seats .notes .note-detail .note-item:hover {
+  cursor: pointer;
+}
+.seats .notes .note-detail .note-item .type {
+  border-radius: 3px;
+  min-width: 20px;
+  max-width: 20px;
+  min-height: 20px;
+  max-height: 20px;
+  margin-right: 10px;
+  border: 1px solid #ddd;
+}
+.seats .notes .note-detail .note-item .type-selected {
+  border: 1px solid black;
+  transform: scale(1.1);
+}

@@ -1,15 +1,12 @@
 import React, { useState, useEffect } from 'react';
 
 //	import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { useSelector } from 'react-redux'
 import callApi from 'api/apiCaller'
-import { useDispatch } from 'react-redux'
-import * as action from './../genreSlice'
 
 function Genre(props) {
-    const genre_store = useSelector(state => state.genres)
-    const [genres, setGenres] = useState(genre_store)
-    const dispatch = useDispatch()
+    // const genre_store = useSelector(state => state.genres)
+    // const [genres, setGenres] = useState(genre_store)
+    // const dispatch = useDispatch()
 
     const [value, setValue] = useState('')
     // change value
@@ -27,8 +24,7 @@ function Genre(props) {
         callApi('genre', 'POST', { 'name': value })
             .then(res => {
                 //console.log('res', res.data)
-                // add to store { _id,...}
-                dispatch(action.addGenre(res.data.genre))
+                // add to store { _id,...}                
                 //console.log(res.data.genre)
             })
         setValue('')
@@ -42,7 +38,7 @@ function Genre(props) {
             .then(res => {
                 //console.log('res', res.data._id)
                 // remove in store { _id,...}
-                dispatch(action.delGenre(res.data._id))
+                //dispatch(action.delGenre(res.data._id))
                 //console.log(res.data.genre)
             })
     }
@@ -50,15 +46,13 @@ function Genre(props) {
     useEffect(() => {
         const LoadGenre = async () => {
             let data = await callApi('genre')
-            setGenres(data.data)
-            dispatch(action.loadGenre(data.data))
-            console.log('called Api')
+            //setGenres(data.data)
+            //dispatch(action.loadGenre(data.data))
+            //console.log('called Api')
         }
-        if (genres.length === 0) {
-            LoadGenre()
-        }
+        
     }, [])
-
+    const [genre_store, setgenre_store] =useState([])
     return (
         <div className='wrap_genre'>
             <div className='genre_title'>

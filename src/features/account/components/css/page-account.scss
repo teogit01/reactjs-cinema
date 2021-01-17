@@ -1,0 +1,280 @@
+.page-account {
+    width: 100%;
+    min-height: 300px;
+
+    .alert {
+        width: 100%;
+        min-height: 60px;
+        text-align: center;
+        font-weight: bold;
+        position: fixed;
+        top: 60px;
+        color: black;
+        left: 0;
+        z-index: 1;
+    }
+
+    .title {
+        display: flex;
+        height: 50px;
+
+        input {
+            margin-left: 130px;
+            width: 300px;
+            height: 35px;
+            border: none;
+            border-bottom: 1px solid #ddd;
+        }
+    }
+
+    .account-main {
+        width: 100%;
+        min-height: 500px;
+        border: 1px solid #eee;
+        border-radius: 5px;
+        display: flex;
+
+        .account-list {
+            width: 25%;
+            min-height: 500px;
+            border-right: 1px solid #eee;
+
+            .account-item {
+                width: 90%;
+                height: 50px;
+                margin: 0 auto;
+                margin-bottom: 5px;
+                display: flex;
+                align-items: center;
+                border-bottom: 1px solid #eee;
+                padding: 0 20px;
+
+                &:hover {
+                    cursor: pointer;
+                }
+            }
+
+            .account-list-title {
+                font-weight: bold;
+                display: flex;
+                justify-content: center;
+                height: 60px;
+            }
+
+            .account-actived {
+                box-shadow: 5px 5px 10px #ddd;
+                color: lightseagreen;
+                font-weight: bold;
+            }
+        }
+
+        .account-info {
+            width: 75%;
+            min-height: 500px;
+
+
+            .info-title {
+                width: 90%;
+                min-height: 60px;
+                margin: 0 auto;
+                border-bottom: 1px solid #eee;
+                font-weight: bold;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+
+            .info-detail {
+                width: 100%;
+
+                .control-title {
+                    width: 90%;
+                    margin: 0 auto;
+                    min-height: 50px;
+                    display: flex;
+
+                    .title-item {
+                        width: 150px;
+                        min-height: 50px;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+
+                        &:hover {
+                            cursor: pointer;
+                        }
+                    }
+
+                    margin-bottom: 20px;
+
+                    .title-item-actived {
+                        color: lightseagreen;
+                        font-weight: bold;
+                    }
+                }
+
+                .control-detail {
+                    width: 90%;
+                    //height: 40px;
+                    margin: 0 auto;
+
+                    .detail-item {
+                        width: 90%;
+                        padding: 10px;
+                        margin: 0 auto;
+                        height: 50p;
+                        border-radius: 5px;
+                        border: 1px solid #eee;
+                        margin-bottom: 5px;
+                        display: none;
+
+                        .item-show {
+                            display: flex;
+                            justify-content: space-between;
+
+                            .status {
+                                width: 120px;
+                                text-align: center;
+                                background-color: lightseagreen;
+                                border-radius: 5px;
+                            }
+
+                            .new {
+                                background-color: rgb(216, 216, 137);
+                            }
+
+                            margin-bottom: 20px;
+                        }
+
+                        .item-hidden {
+                            width: 80%;
+                            margin: 0 auto;
+
+                            label {
+                                font-weight: bold;
+                                width: 100px;
+                            }
+                        }
+
+                    }
+
+                    .info {
+                        width: 100%;
+                        min-height: 450px;
+                        overflow: auto;
+
+                        .item-show {
+                            width: 100%;
+                            //min-height: 430px;
+                            display: flex;
+                            flex-direction: column;
+
+                            .control {
+                                display: flex;
+                                height: 35px;
+
+                                label {
+                                    width: 120px;
+                                    font-weight: bold;
+                                }
+                            }
+                        }
+                    }
+
+                    .ticket {
+                        width: 100%;
+                        min-height: 450px;
+                        overflow: auto;
+                        border: 1px solid #eee;
+                        padding: 10px;
+                        border-radius: 5px;
+                        display: none;
+
+                        .ticket-item {
+                            width: 100%;
+                            max-height: 430px;
+                            //border-bottom: 1px solid #eee;
+
+                            &:hover {
+                                cursor: pointer;
+                            }
+
+                            .item-show {
+                                width: 100%;
+                                margin: 0 auto;
+                                height: 35px;
+
+                                .control {
+                                    display: flex;
+                                    justify-content: space-between;
+                                    width: 100%;
+
+                                    .title {
+                                        font-weight: bold;
+                                    }
+
+                                    .status,
+                                    .new {
+                                        height: 25px;
+                                        width: 130px;
+                                        text-align: center;
+                                        border-radius: 5px;
+                                        background-color: yellow;
+                                    }
+
+                                    .pass {
+                                        background-color: lightseagreen;
+                                    }
+
+                                    .new {
+                                        background-color: yellow;
+                                    }
+                                }
+
+                            }
+
+                            .item-hidden {
+                                width: 95%;
+                                margin-left: 5%;
+                                border-radius: 5px;
+                                padding: 5px 20px;
+                                margin-bottom: 5px;
+                                background-color: #eee;
+
+                                label {
+                                    font-weight: bold;
+                                }
+
+                                position: relative;
+
+                                .print {
+                                    width: 80px;
+                                    height: 30px;
+                                    right: 0;
+                                    bottom: 10px;
+                                    position: absolute;
+                                    z-index: 1;
+                                    font-weight: bold;
+
+                                    &:hover {
+                                        cursor: pointer;
+                                    }
+
+                                    display: none;
+                                }
+
+                                .show {
+                                    display: block;
+                                }
+                            }
+                        }
+                    }
+
+                    .show {
+                        display: block;
+                    }
+                }
+            }
+        }
+    }
+}

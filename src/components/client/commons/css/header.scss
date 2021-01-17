@@ -1,0 +1,132 @@
+.client-header {
+    .btn-login {
+        font-weight: bold;
+        margin-top: 9px;
+
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+
+    height: 60px;
+    z-index: 1;
+
+    .header-content {
+        position: fixed;
+        width: 100%;
+        height: 60px;
+        background-color: #fff;
+
+        box-shadow: 6px 1px 6px #dddd;
+        top: 0px;
+        opacity: .9;
+        display: flex;
+        align-items: center;
+
+        z-index: 1;
+
+        .logo {
+            width: 30%;
+        }
+
+        .menu {
+            width: 40%;
+            display: flex;
+            justify-content: center;
+            height: 100%;
+
+            align-items: center;
+
+            .menu__item {
+                font-weight: bold;
+                margin-left: 20px;
+                font-size: 16px;
+                transition: .3s;
+
+                &:hover {
+                    cursor: pointer;
+                    color: #d32f2f;
+                }
+            }
+        }
+
+        .control {
+            width: 30%;
+            display: flex;
+            padding: 15px 0px;
+            align-items: center;
+
+            .control__login {
+                width: 80%;
+                display: flex;
+                align-items: center;
+                justify-content: flex-end;
+
+                padding: 0 10px;
+                border-right: 1px solid #999;
+
+                .ic {
+                    font-size: 26px;
+                    margin-right: 10px;
+                }
+
+                &:hover {
+                    cursor: pointer;
+                }
+
+            }
+
+            .control__location {
+                width: 60%;
+                display: flex;
+                align-items: center;
+                margin-top: 8px;
+                margin-left: 10px;
+
+                .ic {
+                    font-size: 16px;
+                    margin-right: 10px;
+                }
+
+                .ic-down {
+                    margin-left: 20px;
+                }
+
+                &:hover {
+                    cursor: pointer;
+                }
+
+            }
+        }
+    }
+
+    .branch {
+        position: fixed;
+        width: 160px;
+        height: 230px;
+        overflow: auto;
+
+        border-radius: 5px;
+        padding: 10px 0;
+        right: 0px;
+        top: 70px;
+        background-color: #fff;
+        box-shadow: 1px 1px 10px #ddd;
+        z-index: 1;
+
+        &-item {
+            text-align: left;
+            margin-bottom: 10px;
+            width: 100%;
+
+            padding-left: 15px;
+            transition: .2s;
+
+            &:hover {
+                background-color: #ddd;
+                font-weight: bold;
+                cursor: pointer;
+            }
+        }
+    }
+}

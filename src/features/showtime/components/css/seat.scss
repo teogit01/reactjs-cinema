@@ -1,0 +1,139 @@
+.seats {
+    width: 100%;
+
+    .index-column {
+        display: flex;
+        //margin-left: 10px;
+        margin-left: 24px;
+        justify-content: center;
+
+        .ic {
+            opacity: .6;
+            color: black;
+            font-size: 14px;
+            margin-top: 1px;
+
+            &:hover {
+                cursor: pointer;
+            }
+        }
+
+        .col-item {
+            width: 25px;
+            height: 25px;
+            margin: 2px;
+            text-align: center;
+            border-radius: 3px;
+        }
+
+
+        .pagin {
+            margin-right: 20px;
+        }
+
+        .used {
+            background-color: red;
+        }
+    }
+
+
+    .rows {
+        .per-row {
+            display: flex;
+            justify-content: center;
+
+            .row-item {
+                .index-row {
+                    width: 25px;
+                    height: 25px;
+                    border-radius: 3px;
+                    margin: 2px;
+                }
+
+                .row {
+                    display: flex;
+                    justify-content: flex-end;
+                    //background-color: red;
+                    justify-content: center;
+                }
+            }
+
+            .seat {
+                width: 25px;
+                height: 25px;
+                background-color: #88A09E;
+                margin: 2px;
+                border-radius: 3px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+
+                border: 1px solid #ddd;
+
+                &:hover {
+                    cursor: pointer;
+                    border: 2px solid black;
+                    //transition: all .2s;
+                }
+            }
+
+            .pagin {
+                margin-right: 20px;
+            }
+
+            .seat-couple {
+                background-color: #F6DB79;
+                width: 54px;
+            }
+        }
+    }
+
+    .notes {
+        //z-index: 1;
+        //min-height: 500px;
+        background-color: #fff;
+        //padding-top: 90px;        
+        //z-index: 0;
+        width: 100%;
+        width: 100%;
+        //display: flex;
+
+        .note-detail {
+            display: flex;
+            width: 100%;
+
+            .note-item {
+                width: 100%;
+
+                &:hover {
+                    cursor: pointer;
+                }
+
+                display: flex;
+                margin-bottom: 10px;
+                text-align: center;
+                justify-content: center;
+
+                .type {
+                    border-radius: 3px;
+                    min-width: 20px;
+                    max-width: 20px;
+                    min-height: 20px;
+                    max-height: 20px;
+                    margin-right: 10px;
+
+                    border: 1px solid #ddd;
+                }
+
+                .type-selected {
+                    border: 1px solid black;
+                    transform: scale(1.1);
+                }
+
+                .name {
+                    //width: 80px;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,228 @@
+.page-account {
+  width: 100%;
+  min-height: 300px;
+}
+.page-account .alert {
+  width: 100%;
+  min-height: 60px;
+  text-align: center;
+  font-weight: bold;
+  position: fixed;
+  top: 60px;
+  color: black;
+  left: 0;
+  z-index: 1;
+}
+.page-account .title {
+  display: flex;
+  height: 50px;
+}
+.page-account .title input {
+  margin-left: 130px;
+  width: 300px;
+  height: 35px;
+  border: none;
+  border-bottom: 1px solid #ddd;
+}
+.page-account .account-main {
+  width: 100%;
+  min-height: 500px;
+  border: 1px solid #eee;
+  border-radius: 5px;
+  display: flex;
+}
+.page-account .account-main .account-list {
+  width: 25%;
+  min-height: 500px;
+  border-right: 1px solid #eee;
+}
+.page-account .account-main .account-list .account-item {
+  width: 90%;
+  height: 50px;
+  margin: 0 auto;
+  margin-bottom: 5px;
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid #eee;
+  padding: 0 20px;
+}
+.page-account .account-main .account-list .account-item:hover {
+  cursor: pointer;
+}
+.page-account .account-main .account-list .account-list-title {
+  font-weight: bold;
+  display: flex;
+  justify-content: center;
+  height: 60px;
+}
+.page-account .account-main .account-list .account-actived {
+  box-shadow: 5px 5px 10px #ddd;
+  color: lightseagreen;
+  font-weight: bold;
+}
+.page-account .account-main .account-info {
+  width: 75%;
+  min-height: 500px;
+}
+.page-account .account-main .account-info .info-title {
+  width: 90%;
+  min-height: 60px;
+  margin: 0 auto;
+  border-bottom: 1px solid #eee;
+  font-weight: bold;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.page-account .account-main .account-info .info-detail {
+  width: 100%;
+}
+.page-account .account-main .account-info .info-detail .control-title {
+  width: 90%;
+  margin: 0 auto;
+  min-height: 50px;
+  display: flex;
+  margin-bottom: 20px;
+}
+.page-account .account-main .account-info .info-detail .control-title .title-item {
+  width: 150px;
+  min-height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.page-account .account-main .account-info .info-detail .control-title .title-item:hover {
+  cursor: pointer;
+}
+.page-account .account-main .account-info .info-detail .control-title .title-item-actived {
+  color: lightseagreen;
+  font-weight: bold;
+}
+.page-account .account-main .account-info .info-detail .control-detail {
+  width: 90%;
+  margin: 0 auto;
+}
+.page-account .account-main .account-info .info-detail .control-detail .detail-item {
+  width: 90%;
+  padding: 10px;
+  margin: 0 auto;
+  height: 50p;
+  border-radius: 5px;
+  border: 1px solid #eee;
+  margin-bottom: 5px;
+  display: none;
+}
+.page-account .account-main .account-info .info-detail .control-detail .detail-item .item-show {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+.page-account .account-main .account-info .info-detail .control-detail .detail-item .item-show .status {
+  width: 120px;
+  text-align: center;
+  background-color: lightseagreen;
+  border-radius: 5px;
+}
+.page-account .account-main .account-info .info-detail .control-detail .detail-item .item-show .new {
+  background-color: #d8d889;
+}
+.page-account .account-main .account-info .info-detail .control-detail .detail-item .item-hidden {
+  width: 80%;
+  margin: 0 auto;
+}
+.page-account .account-main .account-info .info-detail .control-detail .detail-item .item-hidden label {
+  font-weight: bold;
+  width: 100px;
+}
+.page-account .account-main .account-info .info-detail .control-detail .info {
+  width: 100%;
+  min-height: 450px;
+  overflow: auto;
+}
+.page-account .account-main .account-info .info-detail .control-detail .info .item-show {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.page-account .account-main .account-info .info-detail .control-detail .info .item-show .control {
+  display: flex;
+  height: 35px;
+}
+.page-account .account-main .account-info .info-detail .control-detail .info .item-show .control label {
+  width: 120px;
+  font-weight: bold;
+}
+.page-account .account-main .account-info .info-detail .control-detail .ticket {
+  width: 100%;
+  min-height: 450px;
+  overflow: auto;
+  border: 1px solid #eee;
+  padding: 10px;
+  border-radius: 5px;
+  display: none;
+}
+.page-account .account-main .account-info .info-detail .control-detail .ticket .ticket-item {
+  width: 100%;
+  max-height: 430px;
+}
+.page-account .account-main .account-info .info-detail .control-detail .ticket .ticket-item:hover {
+  cursor: pointer;
+}
+.page-account .account-main .account-info .info-detail .control-detail .ticket .ticket-item .item-show {
+  width: 100%;
+  margin: 0 auto;
+  height: 35px;
+}
+.page-account .account-main .account-info .info-detail .control-detail .ticket .ticket-item .item-show .control {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+.page-account .account-main .account-info .info-detail .control-detail .ticket .ticket-item .item-show .control .title {
+  font-weight: bold;
+}
+.page-account .account-main .account-info .info-detail .control-detail .ticket .ticket-item .item-show .control .status,
+.page-account .account-main .account-info .info-detail .control-detail .ticket .ticket-item .item-show .control .new {
+  height: 25px;
+  width: 130px;
+  text-align: center;
+  border-radius: 5px;
+  background-color: yellow;
+}
+.page-account .account-main .account-info .info-detail .control-detail .ticket .ticket-item .item-show .control .pass {
+  background-color: lightseagreen;
+}
+.page-account .account-main .account-info .info-detail .control-detail .ticket .ticket-item .item-show .control .new {
+  background-color: yellow;
+}
+.page-account .account-main .account-info .info-detail .control-detail .ticket .ticket-item .item-hidden {
+  width: 95%;
+  margin-left: 5%;
+  border-radius: 5px;
+  padding: 5px 20px;
+  margin-bottom: 5px;
+  background-color: #eee;
+  position: relative;
+}
+.page-account .account-main .account-info .info-detail .control-detail .ticket .ticket-item .item-hidden label {
+  font-weight: bold;
+}
+.page-account .account-main .account-info .info-detail .control-detail .ticket .ticket-item .item-hidden .print {
+  width: 80px;
+  height: 30px;
+  right: 0;
+  bottom: 10px;
+  position: absolute;
+  z-index: 1;
+  font-weight: bold;
+  display: none;
+}
+.page-account .account-main .account-info .info-detail .control-detail .ticket .ticket-item .item-hidden .print:hover {
+  cursor: pointer;
+}
+.page-account .account-main .account-info .info-detail .control-detail .ticket .ticket-item .item-hidden .show {
+  display: block;
+}
+.page-account .account-main .account-info .info-detail .control-detail .show {
+  display: block;
+}

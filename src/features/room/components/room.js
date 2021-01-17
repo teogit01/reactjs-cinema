@@ -4,16 +4,12 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import callApi from 'api/apiCaller'
 
 import PropTypes from 'prop-types'
-import { useDispatch } from 'react-redux';
-import { removeRoom } from './../roomSlice'
 Room.propTypes = {
     room: PropTypes.object,
     idx: PropTypes.number
 }
 function Room(props) {
     const { room, idx } = props
-
-    const dispatch = useDispatch()
 
     // Del room
     function onDel(room) {
@@ -23,7 +19,7 @@ function Room(props) {
             .then(res => {
                 //console.log('res', res.data._id)
                 // remove in store { _id,...}
-                dispatch(removeRoom(res.data._id))
+                //dispatch(removeRoom(res.data._id))
                 //console.log(res.data.room)
             })
     }

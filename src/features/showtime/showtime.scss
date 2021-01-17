@@ -16,27 +16,63 @@
                 display: flex;
 
                 .branchs {
-                    width: 10%;
-                    height: 580px;
+                    width: 25%;
+                    //height: 580px;
                     padding: 10px 10px;
                     border-right: 1px solid #ddd;
-                    margin-top: 10px;
+                    //margin-top: 10px;
+                    //background-color: #eee;
+
+                    .title {
+                        font-weight: bold;
+                        height: 70px;
+                        font-size: 18px;
+                        text-align: center;
+                        border-bottom: 1px solid #fff;
+                    }
 
                     .branch {
                         width: 100%;
-                        height: 100px;
+                        //height: 100px;
                         margin-bottom: 5px;
-                        border-bottom: 1px solid #ddd;
 
-                        &__item {
-                            height: 100%;
-                            display: flex;
-                            align-items: center;
-                            justify-content: center;
-                            font-weight: bold;
+                        padding: 0 20px;
 
+                        &-item {
+                            width: 100%;
+                            min-height: 70px;
+
+                            //margin-bottom: 10px;
                             opacity: .5;
-                            --border-bottom: 1px solid #ddd;
+                            border-bottom: 1px solid #ddd;
+
+                            &-content {
+                                min-height: 60px;
+                                display: flex;
+                                flex-direction: column;
+                                justify-content: center;
+
+                                &-title {
+                                    font-weight: bold;
+                                }
+
+                                .branch-theater {
+                                    padding: 0 0 0 20px;
+                                    width: 100%;
+
+                                    &-item {
+                                        height: 30px;
+
+                                        &:hover {
+                                            font-weight: bold;
+                                        }
+                                    }
+
+                                    .actived {
+                                        font-weight: bold;
+                                    }
+                                }
+                            }
 
                             &:hover {
                                 cursor: pointer;
@@ -64,63 +100,63 @@
                     }
                 }
 
-                .theaters {
-                    width: 30%;
-                    height: 580px;
-                    padding: 10px 10px;
-                    border-right: 1px solid #ddd;
-                    margin-top: 10px;
+                // .theaters {
+                //     width: 0%;
+                //     height: 580px;
+                //     padding: 10px 10px;
+                //     border-right: 1px solid #ddd;
+                //     margin-top: 10px;
 
-                    .theater {
-                        width: 100%;
-                        overflow: auto;
-                        margin-bottom: 5px;
-                        border-bottom: 1px solid #ddd;
+                //     .theater {
+                //         width: 100%;
+                //         overflow: auto;
+                //         margin-bottom: 5px;
+                //         border-bottom: 1px solid #ddd;
 
-                        &__item {
-                            height: 90px;
-                            display: flex;
-                            align-items: center;
-                            width: 100%;
-                            opacity: .7;
+                //         &__item {
+                //             height: 90px;
+                //             display: flex;
+                //             align-items: center;
+                //             width: 100%;
+                //             opacity: .7;
 
-                            .img {
-                                width: 70px;
-                                height: 70px;
-                                border: 1px solid #ddd;
-                                margin-right: 10px;
-                            }
+                //             .img {
+                //                 width: 70px;
+                //                 height: 70px;
+                //                 border: 1px solid #ddd;
+                //                 margin-right: 10px;
+                //             }
 
-                            .infor {
-                                display: flex;
-                                flex-direction: column;
-                                justify-content: center;
-                            }
+                //             .infor {
+                //                 display: flex;
+                //                 flex-direction: column;
+                //                 justify-content: center;
+                //             }
 
-                        }
+                //         }
 
 
-                        &:last-child {
-                            border-bottom: none;
-                        }
+                //         &:last-child {
+                //             border-bottom: none;
+                //         }
 
-                        &:hover {
-                            cursor: pointer;
-                            opacity: 1;
-                            font-weight: bold;
-                        }
+                //         &:hover {
+                //             cursor: pointer;
+                //             opacity: 1;
+                //             font-weight: bold;
+                //         }
 
-                        .actived {
-                            opacity: 1;
-                            font-weight: bold;
-                        }
-                    }
-                }
+                //         .actived {
+                //             opacity: 1;
+                //             font-weight: bold;
+                //         }
+                //     }
+                // }
 
                 .infor-showtime {
-                    width: 60%;
-                    height: 580px;
-                    padding: 10px 10px;
+                    width: 75%;
+                    max-height: 580px;
+                    //padding: 10px 10px;
                     border-right: 1px solid #ddd;
                     margin-top: 10px;
 
@@ -128,29 +164,30 @@
                     .schedule {
                         width: 100%;
                         display: flex;
-                        overflow: auto;
+                        overflow-x: auto;
 
                         &__head {
                             display: flex;
-                            --max-width: 100%;
-                            --width: 100%;
-                            height: 90px;
+                            height: 70px;
+                            padding: 10px 0;
                             border-bottom: 1px solid #ddd;
 
                             &__item {
                                 width: 120px;
-                                box-shadow: 2px 2px 5px #ddd;
+                                //box-shadow: 2px 2px 5px #ddd;
                                 border-radius: 5px;
                                 border: 1px solid #fff;
+                                border-right: 1px solid lightseagreen;
+                                border-radius: 0;
 
-                                height: 90%;
-                                overflow-x: scroll;
+                                //height: 90%;
+                                //overflow-x: scroll;
                                 margin-right: 5px;
-
                                 display: flex;
                                 flex-direction: column;
                                 justify-content: center;
                                 align-items: center;
+                                //height: 70%;
 
                                 .bold {
                                     font-weight: bold;
@@ -162,7 +199,10 @@
                             }
 
                             .actived {
-                                border: 1px solid green;
+                                //border: 1px solid green;
+                                //border-radius: 4px;
+                                color: lightseagreen;
+                                box-shadow: 3px 5px 5px #ddd;
                             }
 
                             .none {
@@ -179,110 +219,115 @@
                         }
                     }
 
-                    .showtime {
+                    .showtimes {
                         width: 100%;
-                        height: 450px;
+                        min-height: 500px;
+                        max-height: 500px;
                         overflow: auto;
 
-                        &--item {
+                        .showtime-detail {
                             width: 100%;
-                            border-bottom: 1px solid #ddd;
-                            margin-top: 15px;
 
-                            &__film {
-                                width: 100%;
-                                height: 80px;
-                                display: flex;
+                            .showtime-film {
+                                padding: 10px 10px;
+                                min-height: 150px;
 
-                                .img {
-                                    width: 80px;
-                                    height: 80px;
-                                    border: 1px solid #ddd;
-                                    margin-right: 10px;
-                                }
-
-                                .film {
+                                .data {
+                                    position: relative;
                                     display: flex;
-                                    flex-direction: column;
-                                    width: 100%;
-                                    height: 80px;
-                                    justify-content: flex-end;
 
-                                    .type-film {
+                                    .film {
+                                        //position: absolute;
+                                        //position: relative;
+                                        //width: 100%;                                        
+                                        min-width: 200px;
+                                        top: -5px;
+                                        text-align: center;
+                                        //min-height: 150px;
                                         font-weight: bold;
-                                        font-size: 16px;
+                                        //margin-left: 20px;
+                                        //margin-right: 20px;
+                                        margin-top: -10px;
                                     }
 
-                                    .remove {
-                                        width: 90%;
-                                        font-size: 20px;
-                                        display: flex;
-                                        justify-content: flex-end;
+                                    .hr {
+                                        //width: 90%;
+                                        // right: 20px;
+                                        border-top: 1px solid #ddd;
+                                        // position: absolute;
+                                        // top: 9px;
+                                    }
 
-                                        .icon-remove {
-                                            width: 20px;
-                                            font-weight: bold;
-                                            visibility: hidden;
+                                }
+
+                                .data-showtime {
+                                    position: relative;
+                                    top: 0;
+                                    min-height: 150px;
+
+                                    display: flex;
+
+                                    .not-found {
+                                        display: none;
+
+                                        &:first-child {
+                                            display: block;
                                         }
                                     }
 
-                                    &:hover .icon-remove {
-                                        visibility: visible;
-                                    }
+                                    .data-showtime-item {
+                                        width: 120px;
+                                        height: 30px;
+                                        display: flex;
+                                        align-items: center;
+                                        justify-content: center;
+                                        border-radius: 5px;
+                                        background-color: #D0D8DC;
+                                        margin-left: 10px;
 
-                                    &:hover {
-                                        cursor: pointer;
+                                        font-weight: bold;
+                                        transition: all .3s;
+
+                                        &:hover {
+                                            cursor: pointer;
+                                            opacity: .8;
+                                            transition: all .3s;
+                                            //font-weight: bold;                                            
+                                        }
+
+                                        &:hover .end {
+                                            font-style: italic;
+                                            transition: all .3s;
+                                        }
+
+                                        .end {
+                                            //color: red;
+                                            font-size: 16px;
+                                            font-weight: bold;
+                                            color: blue;
+                                        }
                                     }
                                 }
-                            }
 
-                            &__show {
-                                margin-top: 10px;
-                                width: 100%;
-                                display: flex;
-                                flex-wrap: wrap;
-
-                                .show {
-                                    width: 135px;
-                                    height: 35px;
-                                    margin: 0 10px 5px 0;
+                                .control {
                                     display: flex;
-                                    justify-content: center;
-                                    align-items: center;
-                                    background-color: #ddd;
-                                    border-radius: 5px;
+                                    justify-content: flex-end;
 
-                                    .start {
-                                        font-size: 17px;
-                                        font-weight: bold;
-                                        color: forestgreen;
+                                    .button-add {
+                                        width: 80px;
+                                        //background-color: lightseagreen;
+                                        background-color: #B1C6D3;
+                                        border-radius: 5px;
+                                        text-align: center;
+
+                                        &:hover {
+                                            cursor: pointer;
+                                            color: #fff;
+                                        }
                                     }
-
-                                    .end {
-                                        font-size: 17px;
-                                        font-weight: bold;
-                                    }
-
-                                    &:hover {
-                                        cursor: pointer;
-                                    }
-
-                                    &:hover .start {
-                                        color: red;
-                                    }
-                                }
-
-                                .show-add {
-                                    padding: 8px 0 0 0px;
-                                }
-
-                                .fs-16 {
-                                    font-size: 20px;
-
                                 }
                             }
                         }
-
                     }
 
                 }
@@ -319,6 +364,18 @@
             width: 300px;
             border: 1px solid #ddd;
             border-radius: 5px;
+        }
+    }
+}
+
+.modal-detail {
+    width: 1000px;
+
+    .detail-seats {
+        --width: 100px;
+
+        .seats {
+            .seat-item {}
         }
     }
 }

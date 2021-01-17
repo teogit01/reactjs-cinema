@@ -1,0 +1,133 @@
+.seats {
+    .button-save {
+        position: fixed;
+        right: 0;
+        z-index: 1;
+        right: 240px;
+        top: 530px;
+        background-color: lightseagreen;
+        width: 60px;
+        border-radius: 5px;
+        text-align: center;
+
+        &:hover {
+            cursor: pointer;
+            color: #fff;
+            opacity: .6;
+        }
+
+    }
+
+    .seat-wrap {
+        .rows {
+            .per-row {
+                display: flex;
+                justify-content: center;
+
+                .row-item,
+                .row-add {
+                    width: 20px;
+                    margin: 2px;
+                    display: flex;
+                    align-items: flex-end;
+                    z-index: 1;
+
+                    &:hover {
+                        cursor: pointer;
+                    }
+                }
+
+                .set-type-seat {
+                    font-weight: bold;
+                    width: 20px;
+                    height: 20px;
+                    margin: 2px;
+
+                    .index-row {
+                        background-color: #ddd;
+                        border-radius: 3px;
+
+                    }
+                }
+
+                .row-add {
+                    position: relative;
+                    top: 22px;
+                    left: 22px;
+
+                    .row-add-item {
+                        width: 100%;
+
+                        .ic {
+                            opacity: .6;
+                            color: black;
+                            font-size: 14px;
+                            margin-top: 1px;
+
+                            &:hover {
+                                cursor: pointer;
+                            }
+                        }
+                    }
+                }
+
+                .seat {
+                    width: 20px;
+                    height: 20px;
+                    background-color: #88A09E;
+                    margin: 2px;
+                    border-radius: 3px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+
+                    &:hover {
+                        cursor: pointer;
+                    }
+                }
+
+                .pagin {
+                    margin-right: 20px;
+                }
+
+                .seat-couple {
+                    background-color: #F6DB79;
+                    width: 44px;
+                }
+
+            }
+
+        }
+
+        .index-column {
+            display: flex;
+            margin-left: 64px;
+            //margin-left: 24px;
+            justify-content: center;
+
+            .ic {
+                opacity: .6;
+                color: black;
+                font-size: 14px;
+                margin-top: 1px;
+
+                &:hover {
+                    cursor: pointer;
+                }
+            }
+
+            .col-item {
+                width: 20px;
+                height: 20px;
+                margin: 2px;
+                text-align: center;
+                border-radius: 3px;
+            }
+
+            .pagin {
+                margin-right: 20px;
+            }
+        }
+
+    }
+}

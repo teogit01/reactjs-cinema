@@ -18,7 +18,7 @@ function Detail(props) {
             </div>
             <hr className='op-5' />
             <div className='form'>
-                <div>Cum rap</div>
+                <div>Cụm rạp</div>
             </div>
         </div>
 

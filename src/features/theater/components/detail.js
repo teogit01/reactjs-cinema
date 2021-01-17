@@ -22,9 +22,10 @@ function Detail(props) {
     const [rooms, setRooms] = useState([])
     const [films, setFilms] = useState([])
     const [allFilm, setAllFilm] = useState([])
+    const [load, setLoad] = useState(false)
     useEffect(() => {
         const LoadRoom = async () => {
-            let data = await callApi(`theater/${match.params._id}`)
+            let data = await callApi(`theater/detail/${match.params._id}`)
             setRooms(data.data.rooms)
             setFilms(data.data.films)
         }
@@ -34,7 +35,7 @@ function Detail(props) {
         }
         LoadRoom()
         LoadAllFilm()
-    }, [])
+    }, [load])
     let optionsFilm = []
     if (allFilm.length > 0) {
         allFilm.map(item => {
@@ -60,6 +61,10 @@ function Detail(props) {
         //console.log('data', data)
         callApi('theater/add-film', 'POST', data).then(() => {
             setValueFilmSelect([])
+            setLoad(!load)
+            // let newFilms = [..films]
+            // newFilms.push()
+            //setFilms()
         })
     }
 
@@ -86,12 +91,14 @@ function Detail(props) {
                 _idtheater: match.params._id,
             }
             callApi('room', 'POST', data).then((res) => {
-                let newRooms = rooms.push(res.data.room)
+                let newRooms = [...rooms]
+                newRooms.push(res.data.room)
                 setRooms(newRooms)
             })
             setRoom('')
         }
     }
+    console.log('rooms', rooms)
     return (
         <div className='wrap-branch'>
             <div className='branch_title'>

@@ -1,0 +1,122 @@
+.filter {
+  position: relative;
+}
+.filter .control-menu {
+  width: 920px;
+  height: 80px;
+  margin: 0 auto;
+  margin-top: -40px;
+  border-radius: 5px;
+  background-color: #fff;
+  box-shadow: 2px 2px 5px #ddd;
+}
+.filter .control-menu .control-menu__item {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+  height: 100%;
+  font-weight: bold;
+  align-items: center;
+}
+.filter .control-menu .control-menu__item .film,
+.filter .control-menu .control-menu__item .theater,
+.filter .control-menu .control-menu__item .showtime,
+.filter .control-menu .control-menu__item .date {
+  width: 270px;
+  height: 30px;
+  padding: 0 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-right: 1px solid #ddd;
+}
+.filter .control-menu .control-menu__item .film:hover,
+.filter .control-menu .control-menu__item .theater:hover,
+.filter .control-menu .control-menu__item .showtime:hover,
+.filter .control-menu .control-menu__item .date:hover {
+  cursor: pointer;
+}
+.filter .control-menu .control-menu__item .theater {
+  max-width: 200px;
+  --overflow: hidden;
+}
+.filter .control-menu .control-menu__item .showtime {
+  width: 200px;
+}
+.filter .control-menu .control-menu__item .date {
+  width: 200px;
+}
+.filter .control-menu .control-menu__item .ic {
+  font-size: 16px;
+  --margin-right: 10px;
+  color: black;
+  opacity: 0.5;
+}
+.filter .control-menu .control-menu__item .item__sup {
+  display: flex;
+  height: 100%;
+  align-items: center;
+  justify-content: space-around;
+}
+.filter .film-content,
+.filter .theater-content,
+.filter .date-content,
+.filter .showtime-content {
+  width: 350px;
+  max-height: 200px;
+  min-height: 20px;
+  position: relative;
+  left: 235px;
+  top: 85px;
+  border-radius: 5px;
+  overflow: auto;
+  background-color: #fff;
+  box-shadow: 0px 2px 1px #ddd;
+  position: absolute;
+  display: none;
+  z-index: 1;
+  border: 1px solid #ddd;
+}
+.filter .film-content__item,
+.filter .theater-content__item,
+.filter .date-content__item,
+.filter .showtime-content__item {
+  margin-bottom: 5px;
+  padding: 0 10px;
+}
+.filter .film-content__item:first-child,
+.filter .theater-content__item:first-child,
+.filter .date-content__item:first-child,
+.filter .showtime-content__item:first-child {
+  margin-top: 10px;
+}
+.filter .film-content__item:hover,
+.filter .theater-content__item:hover,
+.filter .date-content__item:hover,
+.filter .showtime-content__item:hover {
+  background-color: #ddd;
+  cursor: pointer;
+}
+.filter .theater-content {
+  display: block;
+  left: 470px;
+  display: none;
+}
+.filter .film-content {
+  width: 400px;
+}
+.filter .date-content {
+  display: block;
+  left: 650px;
+  display: none;
+  width: 300px;
+}
+.filter .showtime-content {
+  display: block;
+  left: 820px;
+  width: 200px;
+  display: none;
+}
+.filter .show {
+  display: block;
+}

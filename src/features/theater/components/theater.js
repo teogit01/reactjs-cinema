@@ -6,10 +6,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
 import Tooltip from 'components/custom-field/tooltip'
 import callApi from 'api/apiCaller'
-//import { useSelector } from 'react-redux'
-import { useDispatch } from 'react-redux'
 
-import { removeTheater } from './../theaterSlice'
 import { useHistory, useRouteMatch } from 'react-router-dom';
 
 Theater.propTypes = {
@@ -23,14 +20,13 @@ function Theater(props) {
     const { theater, index } = props
     const history = useHistory()
     const match = useRouteMatch()
-    const dispatch = useDispatch()
     // // handle delete branch
     const handleDel = theater => {
         if (window.confirm(`Remove ${theater.name}`)) {
             //remove
             callApi(`theater/${theater._id}`, 'DELETE', null)
             //update theaters        
-            dispatch(removeTheater(theater._id))
+            //dispatch(removeTheater(theater._id))
         }
     }
     const detail = (_id) => {

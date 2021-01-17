@@ -1,0 +1,412 @@
+.feature-films {
+  width: 100%;
+}
+.feature-films .page-main {
+  max-width: 100%;
+}
+.feature-films .page-main .main-films {
+  --padding: 10px;
+  width: 100%;
+  min-height: 550px;
+  --border: 1px solid #ddd;
+  border-radius: 5px;
+}
+.feature-films .page-main .main-films .film-showing,
+.feature-films .page-main .main-films .film-special,
+.feature-films .page-main .main-films .film-coming-soon,
+.feature-films .page-main .main-films .film-waiting {
+  padding: 10px;
+}
+.feature-films .page-main .main-films .film-showing,
+.feature-films .page-main .main-films .film-special,
+.feature-films .page-main .main-films .film-comming-soon {
+  width: 100%;
+}
+.feature-films .page-main .main-films .film-showing .film-type,
+.feature-films .page-main .main-films .film-special .film-type,
+.feature-films .page-main .main-films .film-comming-soon .film-type {
+  --font-weight: bold;
+  margin-bottom: 10px;
+  width: 100%;
+  display: flex;
+}
+.feature-films .page-main .main-films .film-showing .film-type .type,
+.feature-films .page-main .main-films .film-special .film-type .type,
+.feature-films .page-main .main-films .film-comming-soon .film-type .type {
+  font-weight: bold;
+}
+.feature-films .page-main .main-films .film-showing .film-type .status,
+.feature-films .page-main .main-films .film-showing .film-type .edit,
+.feature-films .page-main .main-films .film-showing .film-type .add,
+.feature-films .page-main .main-films .film-special .film-type .status,
+.feature-films .page-main .main-films .film-special .film-type .edit,
+.feature-films .page-main .main-films .film-special .film-type .add,
+.feature-films .page-main .main-films .film-comming-soon .film-type .status,
+.feature-films .page-main .main-films .film-comming-soon .film-type .edit,
+.feature-films .page-main .main-films .film-comming-soon .film-type .add {
+  margin-left: 10px;
+  width: 90px;
+  background-color: lightseagreen;
+  border-radius: 5px;
+  text-align: center;
+}
+.feature-films .page-main .main-films .film-showing .film-type .status:hover,
+.feature-films .page-main .main-films .film-showing .film-type .edit:hover,
+.feature-films .page-main .main-films .film-showing .film-type .add:hover,
+.feature-films .page-main .main-films .film-special .film-type .status:hover,
+.feature-films .page-main .main-films .film-special .film-type .edit:hover,
+.feature-films .page-main .main-films .film-special .film-type .add:hover,
+.feature-films .page-main .main-films .film-comming-soon .film-type .status:hover,
+.feature-films .page-main .main-films .film-comming-soon .film-type .edit:hover,
+.feature-films .page-main .main-films .film-comming-soon .film-type .add:hover {
+  cursor: pointer;
+}
+.feature-films .page-main .main-films .film-showing .film-type .status-hidden,
+.feature-films .page-main .main-films .film-special .film-type .status-hidden,
+.feature-films .page-main .main-films .film-comming-soon .film-type .status-hidden {
+  background-color: lightslategray;
+  color: #fff;
+}
+.feature-films .page-main .main-films .film-showing .film-type .status-actived,
+.feature-films .page-main .main-films .film-special .film-type .status-actived,
+.feature-films .page-main .main-films .film-comming-soon .film-type .status-actived {
+  background-color: lightseagreen;
+}
+.feature-films .page-main .main-films .film-showing .film-type .edit,
+.feature-films .page-main .main-films .film-special .film-type .edit,
+.feature-films .page-main .main-films .film-comming-soon .film-type .edit {
+  background-color: #219dfd;
+  opacity: 1;
+}
+.feature-films .page-main .main-films .film-showing .film-type .edit-actived,
+.feature-films .page-main .main-films .film-special .film-type .edit-actived,
+.feature-films .page-main .main-films .film-comming-soon .film-type .edit-actived {
+  opacity: 0.5;
+}
+.feature-films .page-main .main-films .film-showing .film-type .add,
+.feature-films .page-main .main-films .film-special .film-type .add,
+.feature-films .page-main .main-films .film-comming-soon .film-type .add {
+  background-color: #ff8800;
+}
+.feature-films .page-main .main-films .film-showing .film-list,
+.feature-films .page-main .main-films .film-special .film-list,
+.feature-films .page-main .main-films .film-comming-soon .film-list {
+  width: 100%;
+  overflow-x: scroll;
+}
+.feature-films .page-main .main-films .film-showing .film-list .film-list-item,
+.feature-films .page-main .main-films .film-special .film-list .film-list-item,
+.feature-films .page-main .main-films .film-comming-soon .film-list .film-list-item {
+  display: flex;
+  min-width: 200%;
+  height: 350px;
+  overflow-x: scroll;
+  border-bottom: 1px solid #ddd;
+  overflow-x: scroll;
+}
+.feature-films .page-main .main-films .film-showing .film-list .film-list-item .film,
+.feature-films .page-main .main-films .film-special .film-list .film-list-item .film,
+.feature-films .page-main .main-films .film-comming-soon .film-list .film-list-item .film {
+  position: relative;
+  width: 200px;
+  height: 300px;
+  margin-bottom: 5px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  margin-right: 10px;
+  transition: all 0.2s;
+}
+.feature-films .page-main .main-films .film-showing .film-list .film-list-item .film .outlay,
+.feature-films .page-main .main-films .film-special .film-list .film-list-item .film .outlay,
+.feature-films .page-main .main-films .film-comming-soon .film-list .film-list-item .film .outlay {
+  position: absolute;
+  z-index: -1;
+  border-radius: 5px;
+  width: 101%;
+  height: 300px;
+  padding: 20px;
+  background: rgba(0, 0, 0, 0.3);
+  font-weight: bold;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.feature-films .page-main .main-films .film-showing .film-list .film-list-item .film .outlay .button,
+.feature-films .page-main .main-films .film-special .film-list .film-list-item .film .outlay .button,
+.feature-films .page-main .main-films .film-comming-soon .film-list .film-list-item .film .outlay .button {
+  margin-bottom: 10px;
+  color: #fff;
+  width: 120px;
+  height: 35px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 5px;
+  padding-left: 25px;
+}
+.feature-films .page-main .main-films .film-showing .film-list .film-list-item .film .outlay .button:hover,
+.feature-films .page-main .main-films .film-special .film-list .film-list-item .film .outlay .button:hover,
+.feature-films .page-main .main-films .film-comming-soon .film-list .film-list-item .film .outlay .button:hover {
+  transform: translateY(2px);
+  transition: all 0.2s;
+  opacity: 0.9;
+  color: black;
+}
+.feature-films .page-main .main-films .film-showing .film-list .film-list-item .film .outlay .button-delete,
+.feature-films .page-main .main-films .film-special .film-list .film-list-item .film .outlay .button-delete,
+.feature-films .page-main .main-films .film-comming-soon .film-list .film-list-item .film .outlay .button-delete {
+  background-color: #D50B0B;
+}
+.feature-films .page-main .main-films .film-showing .film-list .film-list-item .film .outlay .button-move,
+.feature-films .page-main .main-films .film-special .film-list .film-list-item .film .outlay .button-move,
+.feature-films .page-main .main-films .film-comming-soon .film-list .film-list-item .film .outlay .button-move {
+  background-color: lightpink;
+}
+.feature-films .page-main .main-films .film-showing .film-list .film-list-item .film .outlay .select,
+.feature-films .page-main .main-films .film-special .film-list .film-list-item .film .outlay .select,
+.feature-films .page-main .main-films .film-comming-soon .film-list .film-list-item .film .outlay .select {
+  width: 120px;
+  height: 100px;
+  background-color: #fff;
+  border-radius: 5px;
+  padding: 5px;
+  transition: all 0.3s;
+  position: relative;
+}
+.feature-films .page-main .main-films .film-showing .film-list .film-list-item .film .outlay .select .select-item,
+.feature-films .page-main .main-films .film-special .film-list .film-list-item .film .outlay .select .select-item,
+.feature-films .page-main .main-films .film-comming-soon .film-list .film-list-item .film .outlay .select .select-item {
+  transition: all 0.3s;
+}
+.feature-films .page-main .main-films .film-showing .film-list .film-list-item .film .outlay .select .select-item:hover,
+.feature-films .page-main .main-films .film-special .film-list .film-list-item .film .outlay .select .select-item:hover,
+.feature-films .page-main .main-films .film-comming-soon .film-list .film-list-item .film .outlay .select .select-item:hover {
+  background-color: #ddd;
+}
+.feature-films .page-main .main-films .film-showing .film-list .film-list-item .film .outlay .select .select-item-actived,
+.feature-films .page-main .main-films .film-special .film-list .film-list-item .film .outlay .select .select-item-actived,
+.feature-films .page-main .main-films .film-comming-soon .film-list .film-list-item .film .outlay .select .select-item-actived {
+  background-color: #ddd;
+}
+.feature-films .page-main .main-films .film-showing .film-list .film-list-item .film .outlay .select .none,
+.feature-films .page-main .main-films .film-special .film-list .film-list-item .film .outlay .select .none,
+.feature-films .page-main .main-films .film-comming-soon .film-list .film-list-item .film .outlay .select .none {
+  display: none;
+}
+.feature-films .page-main .main-films .film-showing .film-list .film-list-item .film .outlay .select .save-move,
+.feature-films .page-main .main-films .film-special .film-list .film-list-item .film .outlay .select .save-move,
+.feature-films .page-main .main-films .film-comming-soon .film-list .film-list-item .film .outlay .select .save-move {
+  position: absolute;
+  background-color: lightskyblue;
+  bottom: 10px;
+  width: 110px;
+  border-radius: 5px;
+  text-align: center;
+}
+.feature-films .page-main .main-films .film-showing .film-list .film-list-item .film .outlay .select .save-move:hover,
+.feature-films .page-main .main-films .film-special .film-list .film-list-item .film .outlay .select .save-move:hover,
+.feature-films .page-main .main-films .film-comming-soon .film-list .film-list-item .film .outlay .select .save-move:hover {
+  background-color: lightskyblue;
+}
+.feature-films .page-main .main-films .film-showing .film-list .film-list-item .film .outlay .button-hidden,
+.feature-films .page-main .main-films .film-special .film-list .film-list-item .film .outlay .button-hidden,
+.feature-films .page-main .main-films .film-comming-soon .film-list .film-list-item .film .outlay .button-hidden {
+  background-color: #73B8BF;
+}
+.feature-films .page-main .main-films .film-showing .film-list .film-list-item .film .outlay .button-actived,
+.feature-films .page-main .main-films .film-special .film-list .film-list-item .film .outlay .button-actived,
+.feature-films .page-main .main-films .film-comming-soon .film-list .film-list-item .film .outlay .button-actived {
+  background-color: #5CC183;
+}
+.feature-films .page-main .main-films .film-showing .film-list .film-list-item .film:hover,
+.feature-films .page-main .main-films .film-special .film-list .film-list-item .film:hover,
+.feature-films .page-main .main-films .film-comming-soon .film-list .film-list-item .film:hover {
+  cursor: pointer;
+  transform: translateY(5px);
+  transition: all 0.2s;
+  opacity: 0.9;
+}
+.feature-films .page-main .main-films .film-showing .film-list .film-list-item .film:hover .film-name,
+.feature-films .page-main .main-films .film-special .film-list .film-list-item .film:hover .film-name,
+.feature-films .page-main .main-films .film-comming-soon .film-list .film-list-item .film:hover .film-name {
+  color: red;
+}
+.feature-films .page-main .main-films .film-showing .film-list .film-list-item .film .film-poster,
+.feature-films .page-main .main-films .film-special .film-list .film-list-item .film .film-poster,
+.feature-films .page-main .main-films .film-comming-soon .film-list .film-list-item .film .film-poster {
+  width: 100%;
+  height: 305px;
+  border-radius: 5px;
+}
+.feature-films .page-main .main-films .film-showing .film-list .film-list-item .film .film-poster img,
+.feature-films .page-main .main-films .film-special .film-list .film-list-item .film .film-poster img,
+.feature-films .page-main .main-films .film-comming-soon .film-list .film-list-item .film .film-poster img {
+  width: 200px;
+  height: 300px;
+  border-radius: 5px;
+}
+.feature-films .page-main .main-films .film-showing .film-list .film-list-item .film .film-content,
+.feature-films .page-main .main-films .film-special .film-list .film-list-item .film .film-content,
+.feature-films .page-main .main-films .film-comming-soon .film-list .film-list-item .film .film-content {
+  position: absolute;
+  width: 100%;
+  height: 300px;
+  border-radius: 5px;
+  padding: 10px;
+  top: 0;
+  visibility: hidden;
+}
+.feature-films .page-main .main-films .film-showing .film-list .film-list-item .film:hover .film-poster,
+.feature-films .page-main .main-films .film-special .film-list .film-list-item .film:hover .film-poster,
+.feature-films .page-main .main-films .film-comming-soon .film-list .film-list-item .film:hover .film-poster {
+  opacity: 0.9;
+  transition: all 0.5;
+  color: white;
+}
+.feature-films .page-main .main-films .film-showing .film-list .film-list-item .film .film-name,
+.feature-films .page-main .main-films .film-special .film-list .film-list-item .film .film-name,
+.feature-films .page-main .main-films .film-comming-soon .film-list .film-list-item .film .film-name {
+  text-align: center;
+  font-weight: bold;
+}
+.feature-films .page-main .main-films .film-showing .film-list .film-list-item .film:hover .film-content,
+.feature-films .page-main .main-films .film-special .film-list .film-list-item .film:hover .film-content,
+.feature-films .page-main .main-films .film-comming-soon .film-list .film-list-item .film:hover .film-content {
+  visibility: visible;
+  opacity: 1;
+}
+.feature-films .page-main .main-films .film-showing .film-list .film-list-item .film-edit,
+.feature-films .page-main .main-films .film-special .film-list .film-list-item .film-edit,
+.feature-films .page-main .main-films .film-comming-soon .film-list .film-list-item .film-edit {
+  opacity: 0.7;
+}
+.feature-films .page-main .main-films .film-showing .film-list .film-list-item .film-edit:hover .outlay,
+.feature-films .page-main .main-films .film-special .film-list .film-list-item .film-edit:hover .outlay,
+.feature-films .page-main .main-films .film-comming-soon .film-list .film-list-item .film-edit:hover .outlay {
+  z-index: 1;
+}
+.feature-films .page-main .main-films .middle {
+  width: 60%;
+  min-height: 550px;
+  border-right: 1px solid #ddd;
+}
+.feature-films .page-add {
+  display: flex;
+  flex-wrap: wrap;
+}
+.feature-films .page-add .wrap-form {
+  width: 100%;
+}
+.feature-films .page-add .wrap-form .form__content {
+  --display: flex;
+  width: 100%;
+}
+.feature-films .page-add .wrap-form .form__content .form {
+  display: flex;
+  justify-content: space-between;
+}
+.feature-films .page-add .wrap-form .form__content .form__left {
+  width: 70%;
+  border-right: 1px solid #ddd;
+  margin-right: 3%;
+}
+.feature-films .page-add .wrap-form .form__content .form__right {
+  width: 25%;
+  height: 450px;
+  box-shadow: 4px 10px 10px #ddd;
+  padding: 10px 0;
+  border-radius: 5px;
+}
+.feature-films .page-add .wrap-form .form__content .form__right .poster {
+  margin: 0 auto;
+  width: 250px;
+  height: 350px;
+}
+.feature-films .page-detail {
+  width: 95%;
+  margin: 0 auto;
+}
+.feature-films .page-detail .detail {
+  display: flex;
+  justify-content: space-between;
+}
+.feature-films .page-detail .detail .infor {
+  width: 70%;
+  background-color: #fff;
+  box-shadow: 5px 5px 5px #ddd;
+  padding: 10px;
+  border-radius: 5px;
+  --margin: 0 auto;
+}
+.feature-films .page-detail .detail .infor .control {
+  display: flex;
+}
+.feature-films .page-detail .detail .infor .control label {
+  height: 35px;
+  width: 150px;
+  display: flex;
+  --align-items: flex-end;
+  align-items: center;
+  font-weight: bold;
+}
+.feature-films .page-detail .detail .infor .control .input {
+  border-radius: 0;
+  border: 1px solid #fff;
+  background-color: #fff;
+}
+.feature-films .page-detail .detail .infor .control .input:focus {
+  outline: none;
+  --border-bottom: 1px solid #ddd;
+  border-radius: 0;
+}
+.feature-films .page-detail .detail .infor .control .edit {
+  background-color: #fff;
+  border-bottom: 1px solid #ddd;
+  color: black;
+  --font-weight: bold;
+}
+.feature-films .page-detail .detail .poster {
+  width: 25%;
+  background-color: #fff;
+  box-shadow: 5px 5px 5px #ddd;
+  padding: 10px;
+  border-radius: 5px;
+  text-align: center;
+}
+.feature-films .page-detail .detail .poster img {
+  width: 220px;
+  height: 350px;
+  margin: 0 auto;
+}
+
+.hidden {
+  visibility: hidden;
+}
+
+.visible {
+  visibility: visible;
+}
+
+.modal-add label {
+  font-weight: bold;
+}
+
+.detail {
+  width: 100%;
+}
+.detail .control {
+  display: flex;
+}
+.detail .control label {
+  width: 150px;
+  font-weight: bold;
+}
+.detail .control input {
+  width: 100%;
+  border: none;
+}
+.detail .control input:focus {
+  outline: none;
+  border-bottom: 1px solid #eee;
+}

@@ -1,0 +1,142 @@
+.page-user {
+  width: 100%;
+  min-height: 600px;
+  border: 1px solid #ddd;
+}
+.page-user .user-main {
+  width: 70%;
+  min-height: 600px;
+  margin: 0 auto;
+  background-color: #fff;
+  box-shadow: 0px 0px 40px #ddd;
+}
+.page-user .user-main .title {
+  width: 80%;
+  margin: 0 auto;
+  height: 70px;
+  font-size: 22px;
+  border-bottom: 1px solid #eee;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+}
+.page-user .user-main .main-content {
+  width: 100%;
+  display: flex;
+}
+.page-user .user-main .main-content .left {
+  width: 25%;
+  min-height: 500px;
+  box-shadow: 5px 0px 5px #ddd;
+  padding: 20px 0;
+}
+.page-user .user-main .main-content .left .left-item {
+  height: 80px;
+  width: 90%;
+  margin: 0 auto;
+  border-bottom: 1px solid #ddd;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.page-user .user-main .main-content .left .left-item:hover {
+  cursor: pointer;
+}
+.page-user .user-main .main-content .left .actived {
+  color: lightseagreen;
+  font-weight: bold;
+  box-shadow: 5px 5px 5px #ddd;
+}
+.page-user .user-main .main-content .right {
+  width: 70%;
+  min-height: 500px;
+  padding: 20px;
+}
+.page-user .user-main .main-content .right .info {
+  display: none;
+}
+.page-user .user-main .main-content .right .info .control {
+  display: flex;
+  height: 45px;
+  border-bottom: 1px solid #eee;
+  align-items: flex-end;
+}
+.page-user .user-main .main-content .right .info .control label {
+  font-weight: bold;
+  width: 150px;
+}
+.page-user .user-main .main-content .right .info .control-button {
+  height: 50px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+.page-user .user-main .main-content .right .info .control-button .button-edit {
+  background-color: lightseagreen;
+  width: 200px;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  border-radius: 5px;
+}
+.page-user .user-main .main-content .right .info .control-button .button-edit:hover {
+  cursor: pointer;
+  color: #fff;
+  opacity: 0.8;
+}
+.page-user .user-main .main-content .right .history {
+  width: 100%;
+  min-height: 470px;
+  display: none;
+  overflow: auto;
+}
+.page-user .user-main .main-content .right .history .history-content {
+  width: 100%;
+}
+.page-user .user-main .main-content .right .history .history-content .history-item {
+  width: 90%;
+  min-height: 40px;
+  align-items: center;
+  border-bottom: 1px solid #eee;
+  margin-bottom: 5px;
+}
+.page-user .user-main .main-content .right .history .history-content .history-item .item-title {
+  display: flex;
+  height: 40px;
+  align-items: center;
+  justify-content: space-between;
+}
+.page-user .user-main .main-content .right .history .history-content .history-item .item-title .title-status {
+  width: 100px;
+  text-align: center;
+  font-weight: bold;
+  background-color: yellow;
+  border-radius: 5px;
+}
+.page-user .user-main .main-content .right .history .history-content .history-item .item-title .used {
+  background-color: lightseagreen;
+}
+.page-user .user-main .main-content .right .history .history-content .history-item .content .content-item {
+  width: 95%;
+  margin-left: 5%;
+  margin-bottom: 5px;
+  border: 1px solid #eee;
+  border-radius: 5px;
+  padding: 5px;
+  background-color: #eee;
+}
+.page-user .user-main .main-content .right .history .history-content .history-item .content .content-item .status {
+  border-radius: 5px;
+}
+.page-user .user-main .main-content .right .history .history-content .history-item .content .content-item .status span {
+  font-weight: bold;
+}
+.page-user .user-main .main-content .right .history .history-content .history-item:hover {
+  cursor: pointer;
+}
+.page-user .user-main .main-content .right .show {
+  display: block;
+}

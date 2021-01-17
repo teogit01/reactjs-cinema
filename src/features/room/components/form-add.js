@@ -7,8 +7,6 @@ import SelectField from 'components/custom-field/select-field'
 import { initiaValues } from 'assets/constant/room'
 import { useHistory } from 'react-router-dom';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { useDispatch } from 'react-redux'
-import { addRoom } from './../roomSlice'
 import callApi from 'api/apiCaller'
 
 FormAdd.propTypes = {
@@ -19,7 +17,6 @@ FormAdd.propTypes = {
 function FormAdd(props) {
     const { optionsBranch } = props
     const history = useHistory()
-    const dispatch = useDispatch()
     const goBack = () => {
         history.goBack()
     }
@@ -35,8 +32,7 @@ function FormAdd(props) {
         callApi('room', 'POST', values).then((res) => {
             //add store 
             //let data = res.data.room            
-            //data.room.theater.push(res.data.theater)
-            dispatch(addRoom(res.data.room))
+            //data.room.theater.push(res.data.theater)            
             history.goBack()
         })
     }

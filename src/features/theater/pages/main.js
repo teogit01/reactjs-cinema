@@ -2,7 +2,6 @@ import React from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import Theater from 'features/theater/components/theater'
 import { useHistory, useRouteMatch } from 'react-router-dom'
-import { propTypes } from 'prop-types';
 
 import PropTypes from 'prop-types'
 

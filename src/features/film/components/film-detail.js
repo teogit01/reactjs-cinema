@@ -80,6 +80,13 @@ function FilmDetail(props) {
                 </div>
 
                 <div className='control'>
+                    <label>Price:</label>
+                    <input type='text'
+                        //disabled={!checkEdit}
+                        className={checkEdit ? 'input edit' : 'input'} placeholder={film.price} value={`${film.price} VNĐ`} />
+                </div>
+
+                <div className='control'>
                     <label>Open day:</label>
                     <input type='text'
                         //disabled={!checkEdit}
@@ -108,7 +115,7 @@ function FilmDetail(props) {
                 <hr />
                 <div>
                     Set 'Edit film':
-            <Switch
+                <Switch
                         // checked={state.checkedB}
                         onChange={handleChangeSetEdit}
                         color="primary"

@@ -1,0 +1,80 @@
+.page-main {
+  width: 100%;
+  min-height: 400px;
+}
+.page-main .main {
+  width: 100%;
+  min-height: 50px;
+  border-bottom: 1px solid #eee;
+}
+.page-main .main .main-title {
+  font-weight: bold;
+  font-size: 16px;
+  height: 50px;
+}
+.page-main .main .filter {
+  width: 90%;
+  margin: 0 auto;
+  display: flex;
+  min-height: 50px;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 70px;
+}
+.page-main .main .filter .filter-item {
+  width: 200px;
+  border-bottom: 1px solid #eee;
+  position: relative;
+}
+.page-main .main .filter .filter-item:hover {
+  cursor: pointer;
+}
+.page-main .main .filter .filter-item .openfilm,
+.page-main .main .filter .filter-item .openbranch,
+.page-main .main .filter .filter-item .opentheater,
+.page-main .main .filter .filter-item .opendate {
+  width: 100%;
+  position: absolute;
+  top: 30px;
+  display: none;
+  z-index: 1;
+}
+.page-main .main .filter .filter-item .openfilm .openfilm-content,
+.page-main .main .filter .filter-item .openbranch .openfilm-content,
+.page-main .main .filter .filter-item .opentheater .openfilm-content,
+.page-main .main .filter .filter-item .opendate .openfilm-content {
+  width: 100%;
+  background-color: #fff;
+}
+.page-main .main .filter .filter-item .openfilm .openfilm-content .openfilm-content-item,
+.page-main .main .filter .filter-item .openbranch .openfilm-content .openfilm-content-item,
+.page-main .main .filter .filter-item .opentheater .openfilm-content .openfilm-content-item,
+.page-main .main .filter .filter-item .opendate .openfilm-content .openfilm-content-item {
+  width: 100%;
+  height: 20px;
+  border-radius: 4px;
+  margin-bottom: 5px;
+}
+.page-main .main .filter .filter-item .openfilm .openfilm-content .openfilm-content-item:hover,
+.page-main .main .filter .filter-item .openbranch .openfilm-content .openfilm-content-item:hover,
+.page-main .main .filter .filter-item .opentheater .openfilm-content .openfilm-content-item:hover,
+.page-main .main .filter .filter-item .opendate .openfilm-content .openfilm-content-item:hover {
+  background-color: #eee;
+  border-radius: 5px;
+}
+.page-main .main .filter .filter-item .show {
+  display: block;
+}
+.page-main .main .filter .filter-item .active {
+  background-color: #eee;
+}
+.page-main .main .tickets {
+  width: 90%;
+  margin: 0 auto;
+  min-height: 40px;
+}
+.page-main .ic {
+  font-size: 20px;
+  position: absolute;
+  right: 0;
+}

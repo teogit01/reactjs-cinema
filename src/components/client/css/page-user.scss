@@ -1,0 +1,181 @@
+.page-user {
+    width: 100%;
+    min-height: 600px;
+    border: 1px solid #ddd;
+
+    //background-color: rgb(193, 209, 214);    
+
+    .user-main {
+        width: 70%;
+        min-height: 600px;
+        margin: 0 auto;
+        background-color: #fff;
+        box-shadow: 0px 0px 40px #ddd;
+
+        .title {
+            width: 80%;
+            margin: 0 auto;
+            height: 70px;
+            font-size: 22px;
+            border-bottom: 1px solid #eee;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: bold;
+            //text-align: center;
+        }
+
+        .main-content {
+            width: 100%;
+            display: flex;
+
+            .left {
+                width: 25%;
+                min-height: 500px;
+                box-shadow: 5px 0px 5px #ddd;
+                padding: 20px 0;
+
+                .left-item {
+                    height: 80px;
+                    width: 90%;
+                    margin: 0 auto;
+                    border-bottom: 1px solid #ddd;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+
+                    &:hover {
+                        cursor: pointer;
+                    }
+                }
+
+                .actived {
+                    color: lightseagreen;
+                    font-weight: bold;
+                    box-shadow: 5px 5px 5px #ddd;
+                }
+            }
+
+            .right {
+                width: 70%;
+                min-height: 500px;
+                padding: 20px;
+
+                .info {
+                    display: none;
+
+                    .control {
+                        display: flex;
+                        height: 45px;
+                        border-bottom: 1px solid #eee;
+                        align-items: flex-end;
+
+                        label {
+                            font-weight: bold;
+                            width: 150px;
+                        }
+                    }
+
+                    .control-button {
+                        height: 50px;
+                        display: flex;
+                        justify-content: flex-end;
+                        align-items: center;
+
+                        .button-edit {
+                            background-color: lightseagreen;
+                            width: 200px;
+                            height: 30px;
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+                            font-weight: bold;
+                            border-radius: 5px;
+
+                            &:hover {
+                                cursor: pointer;
+                                color: #fff;
+                                opacity: .8;
+                            }
+
+                        }
+                    }
+                }
+
+                .history {
+                    width: 100%;
+                    min-height: 470px;
+                    display: none;
+                    overflow: auto;
+
+                    .history-content {
+                        width: 100%;
+
+                        .history-item {
+                            width: 90%;
+                            min-height: 40px;
+                            align-items: center;
+                            //border-radius: 5px;
+                            border-bottom: 1px solid #eee;
+                            margin-bottom: 5px;
+
+                            .item-title {
+                                display: flex;
+                                height: 40px;
+                                align-items: center;
+                                justify-content: space-between;
+
+                                .title-date {}
+
+                                .title-status {
+                                    width: 100px;
+                                    text-align: center;
+                                    font-weight: bold;
+                                    background-color: yellow;
+                                    border-radius: 5px;
+                                    //color: #fff;
+                                }
+
+                                .used {
+                                    background-color: lightseagreen;
+                                }
+                            }
+
+                            .content {
+                                .content-item {
+                                    width: 95%;
+                                    margin-left: 5%;
+                                    margin-bottom: 5px;
+                                    border: 1px solid #eee;
+                                    border-radius: 5px;
+                                    padding: 5px;
+                                    background-color: #eee;
+
+                                    .status {
+                                        //width: 100px;
+                                        border-radius: 5px;
+
+                                        //font-weight: bold;
+                                        span {
+                                            font-weight: bold;
+                                        }
+                                    }
+
+                                }
+                            }
+
+                            &:hover {
+                                cursor: pointer;
+                            }
+                        }
+                    }
+                }
+
+                .show {
+                    display: block;
+                }
+            }
+        }
+
+    }
+}

@@ -3,19 +3,14 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import FormAdd from '../components/form-add'
 import { useHistory } from 'react-router-dom';
 
-import { useDispatch } from 'react-redux'
-import { addBranch } from './../branchSlice'
-
 function PageAdd() {
-    const dispatch = useDispatch()
     const history = useHistory()
     const goBack = () => {
         history.goBack()
     }
 
     const handleSubmit = (values) => {
-        //up store
-        dispatch(addBranch(values))
+        //up store        
     }
     return (
         <div className='page-add'>

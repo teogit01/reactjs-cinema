@@ -1,57 +1,87 @@
-.wrap_genre {
+.feature-genre {
+    .page-main {
+        width: 100%;
 
-    --width: 50%;
-
-    .genre_title {
-        --width: 97em;
-    }
-
-    .genre_list {
-        padding: 0 20px;
-        display: flex;
-        flex-wrap: wrap;
-        --width: 100%;
-        --overflow: scroll;
-        border-bottom: 1px solid #ddd;
-
-        &--item {
-
-            font-size: 16px;
-
-            margin-bottom: 10px;
-            width: 100%;
-            height: 35px;
+        .main {
             display: flex;
-            align-items: center;
+            padding: 10px;
+            min-height: 500px;
 
-            --box-shadow: 1px 1px 3px #999;
-            border: 1px solid #ddd;
-            border-radius: 5px;
-            background-color: #fff;
-            transition: all .3s;
+            .genres,
+            .countrys {
+                width: 50%;
+                padding: 10px;
 
-            &:hover {
-                border: 1px solid #111;
-                cursor: pointer;
-            }
+                .form-add {
+                    input {
+                        border: none;
+                        border-bottom: 1px solid #ddd;
+                        width: 80%;
 
-            form {
-                width: 95%;
+                        &:focus {
+                            outline: none;
+                        }
+                    }
 
-                .add {
-                    padding: 0 2%;
-                    width: 100%;
-                    border: none;
+                    margin-bottom: 10px;
+                }
 
-                    &:focus {
-                        outline: none;
+                .list {
+
+                    .genre-item,
+                    .country-item {
+                        display: flex;
+                        height: 30px;
+
+                        &:hover {
+                            cursor: pointer;
+                        }
+
+                        .genre-stt,
+                        .country-stt {
+                            width: 60px;
+                        }
+
+                        .genre-name,
+                        .country-name {
+                            width: 300px;
+                        }
+
+                        // .remove {
+                        //     visibility: hidden;
+                        // }
+
+                        // &:hover .remove {
+                        //     visibility: visible;
+                        // }
+                    }
+
+                    .show {
+                        visibility: visible;
+                    }
+
+                    .none {
+                        visibility: hidden;
                     }
                 }
             }
         }
-    }
 
-    .head {
-        font-weight: bold;
+        .genres {
+            border-right: 1px solid #ddd;
+        }
+
+        .ic-add {
+            color: #bbb;
+            margin-top: -50px;
+            //position: absolute;
+            //right: 0;
+            //top: -15px;
+            font-size: 20px;
+
+            &:hover {
+                cursor: pointer;
+            }
+        }
     }
 }

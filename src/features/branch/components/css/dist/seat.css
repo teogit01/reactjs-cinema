@@ -1,0 +1,103 @@
+.seats .button-save {
+  position: fixed;
+  right: 0;
+  z-index: 1;
+  right: 240px;
+  top: 530px;
+  background-color: lightseagreen;
+  width: 60px;
+  border-radius: 5px;
+  text-align: center;
+}
+.seats .button-save:hover {
+  cursor: pointer;
+  color: #fff;
+  opacity: 0.6;
+}
+.seats .seat-wrap .rows .per-row {
+  display: flex;
+  justify-content: center;
+}
+.seats .seat-wrap .rows .per-row .row-item,
+.seats .seat-wrap .rows .per-row .row-add {
+  width: 20px;
+  margin: 2px;
+  display: flex;
+  align-items: flex-end;
+  z-index: 1;
+}
+.seats .seat-wrap .rows .per-row .row-item:hover,
+.seats .seat-wrap .rows .per-row .row-add:hover {
+  cursor: pointer;
+}
+.seats .seat-wrap .rows .per-row .set-type-seat {
+  font-weight: bold;
+  width: 20px;
+  height: 20px;
+  margin: 2px;
+}
+.seats .seat-wrap .rows .per-row .set-type-seat .index-row {
+  background-color: #ddd;
+  border-radius: 3px;
+}
+.seats .seat-wrap .rows .per-row .row-add {
+  position: relative;
+  top: 22px;
+  left: 22px;
+}
+.seats .seat-wrap .rows .per-row .row-add .row-add-item {
+  width: 100%;
+}
+.seats .seat-wrap .rows .per-row .row-add .row-add-item .ic {
+  opacity: 0.6;
+  color: black;
+  font-size: 14px;
+  margin-top: 1px;
+}
+.seats .seat-wrap .rows .per-row .row-add .row-add-item .ic:hover {
+  cursor: pointer;
+}
+.seats .seat-wrap .rows .per-row .seat {
+  width: 20px;
+  height: 20px;
+  background-color: #88A09E;
+  margin: 2px;
+  border-radius: 3px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.seats .seat-wrap .rows .per-row .seat:hover {
+  cursor: pointer;
+}
+.seats .seat-wrap .rows .per-row .pagin {
+  margin-right: 20px;
+}
+.seats .seat-wrap .rows .per-row .seat-couple {
+  background-color: #F6DB79;
+  width: 44px;
+}
+.seats .seat-wrap .index-column {
+  display: flex;
+  margin-left: 64px;
+  justify-content: center;
+}
+.seats .seat-wrap .index-column .ic {
+  opacity: 0.6;
+  color: black;
+  font-size: 14px;
+  margin-top: 1px;
+}
+.seats .seat-wrap .index-column .ic:hover {
+  cursor: pointer;
+}
+.seats .seat-wrap .index-column .col-item {
+  width: 20px;
+  height: 20px;
+  margin: 2px;
+  text-align: center;
+  border-radius: 3px;
+}
+.seats .seat-wrap .index-column .pagin {
+  margin-right: 20px;
+}

@@ -18,9 +18,27 @@
   margin: 0px;
   padding: 0px;
   font-family: "Courier New", Courier, monospace;
-  font-size: 14px;
+  font-size: 15px;
+
+  .alert {
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+  }
+
+  .alert-none {
+    display: none;
+  }
+
+  .hover {
+    &:hover {
+      cursor: pointer;
+    }
+  }
 
   width: 100%;
+
   --background-color: #eee;
 
   .admin {
@@ -32,6 +50,8 @@
   }
 
   .client {
+
+
     .content {
       margin-top: 65px;
     }
@@ -60,7 +80,12 @@
 
 
   .date {
-    width: 42.5em;
+    //width: 42.5em;
+    width: 32.5em;
+  }
+
+  .d {
+    width: 43.5em;
   }
 
   .button {

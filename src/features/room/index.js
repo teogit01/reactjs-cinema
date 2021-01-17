@@ -1,27 +1,25 @@
-import React, { useEffect } from 'react';
+import React, { useEffect, useState } from 'react';
 import './room.scss'
 import PageMain from './pages/page.main';
 import PageAdd from './pages/page.add';
 import PageDetail from './pages/page.detail'
 import { Switch, Route, useRouteMatch } from 'react-router-dom'
 
-//import { loadTheater } from 'features/theater/theaterSlice'
-import { loadBranch } from 'features/branch/branchSlice'
-import { loadRoom } from 'features/room/roomSlice'
 import callApi from 'api/apiCaller'
 
-import { useSelector, useDispatch } from 'react-redux'
 function RoomIndex() {
     const match = useRouteMatch()
     //const theater_store = useSelector(state => state.theaters)
-    const branch_store = useSelector(state => state.branchs)
-    const room_store = useSelector(state => state.rooms)
-    const dispatch = useDispatch()
+    // const branch_store = useSelector(state => state.branchs)
+    // const room_store = useSelector(state => state.rooms)
+    //const dispatch = useDispatch()
+    const [branch_store, setbranch] = useState([])
+    const [room_store, setroom_store] = useState([])
 
     useEffect(() => {
         const LoadBranch = async () => {
             let data = await callApi('branch/get')
-            dispatch(loadBranch(data.data))
+
         }
         if (branch_store.length === 0) {
             LoadBranch()
@@ -29,7 +27,7 @@ function RoomIndex() {
         // room
         const LoadRoom = async () => {
             let data = await callApi('room/get')
-            dispatch(loadRoom(data.data))
+            //dispatch(loadRoom(data.data))
         }
         if (room_store.length === 0) {
             LoadRoom()

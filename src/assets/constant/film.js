@@ -3,6 +3,7 @@ export const initialValues = {
     genre: [],
     country: [],
     runtime: '',
+    price: 0,
     openday: '',
     director: '',
     cast: '',

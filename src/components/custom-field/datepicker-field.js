@@ -46,7 +46,7 @@ function CusDatePicker(props) {
             </div>
             <div className='col-12'>
                 <DatePicker
-                    className='date form-control'
+                    className='d form-control'
                     dateFormat="dd/MM/yyyy"
                     {...field}
                     value={startDate}

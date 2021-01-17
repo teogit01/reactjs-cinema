@@ -1,0 +1,173 @@
+.filter {
+    .alert-filter {
+        position: fixed;
+        width: 100%;
+        min-height: 50px;
+        //background-color: red;
+        z-index: 1;
+        top: 60px;
+        display: none;
+        text-align: center;
+        font-weight: bold;
+
+        .al {
+            //width: 100%;
+            min-height: 50px;
+            top: 60px;
+        }
+    }
+
+    .show {
+        display: block;
+    }
+
+    position: relative;
+
+    .control-menu {
+
+        width: 920px;
+        height: 80px;
+        margin: 0 auto;
+        margin-top: -40px;
+
+        border-radius: 5px;
+        background-color: #fff;
+        box-shadow: 2px 2px 5px #ddd;
+
+        .control-menu__item {
+            display: flex;
+            justify-content: space-between;
+            padding: 10px;
+            height: 100%;
+            font-weight: bold;
+            align-items: center;
+
+            .film,
+            .theater,
+            .showtime,
+            .date {
+                width: 270px;
+                height: 30px;
+                padding: 0 10px;
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                border-right: 1px solid #ddd;
+
+                &:hover {
+                    cursor: pointer;
+                }
+            }
+
+
+            .theater {
+                max-width: 200px;
+                --overflow: hidden;
+            }
+
+            .showtime {
+                width: 200px;
+            }
+
+            .date {
+                width: 200px;
+            }
+
+            .ic {
+                font-size: 16px;
+                --margin-right: 10px;
+                color: black;
+                opacity: .5;
+            }
+
+            .item__sup {
+                display: flex;
+                height: 100%;
+                align-items: center;
+                justify-content: space-around;
+            }
+
+        }
+
+    }
+
+    .film-content,
+    .theater-content,
+    .date-content,
+    .showtime-content {
+        width: 350px;
+        max-height: 200px;
+        min-height: 20px;
+        position: relative;
+        left: 235px;
+        top: 85px;
+        border-radius: 5px;
+
+        overflow: auto;
+        background-color: #fff;
+        box-shadow: 0px 2px 1px #ddd;
+        position: absolute;
+        display: none;
+        z-index: 1;
+        border: 1px solid #ddd;
+
+        &__item {
+
+            &:first-child {
+                margin-top: 10px;
+            }
+
+            margin-bottom: 5px;
+            padding: 0 10px;
+
+            &:hover {
+                background-color: #ddd;
+                cursor: pointer;
+            }
+        }
+
+        .search-film {
+            input {
+                width: 100%;
+                border: none;
+                border-bottom: 1px solid #eee;
+
+                &:focus {
+                    outline: none;
+                }
+            }
+
+            &:hover {
+                background-color: #fff;
+            }
+        }
+    }
+
+    .theater-content {
+        display: block;
+        left: 470px;
+        display: none;
+    }
+
+    .film-content {
+        width: 400px;
+    }
+
+    .date-content {
+        display: block;
+        left: 650px;
+        display: none;
+        width: 300px;
+    }
+
+    .showtime-content {
+        display: block;
+        left: 820px;
+        width: 200px;
+        display: none;
+    }
+
+    .show {
+        display: block;
+    }
+}

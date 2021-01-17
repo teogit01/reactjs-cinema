@@ -1,9 +1,6 @@
 import React, { useState, useEffect } from 'react';
 //	import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { useSelector } from 'react-redux'
 import callApi from 'api/apiCaller'
-import { useDispatch } from 'react-redux'
-import * as action from './../countrySlice'
 
 import PropTypes from 'prop-types'
 Country.propTypes = {
@@ -12,8 +9,7 @@ Country.propTypes = {
 function Country(props) {
     const { countrys } = props
     //const country_store = useSelector(state => state.countrys)
-    //const [countrys, setCountrys] = useState(country_store)
-    const dispatch = useDispatch()
+    //const [countrys, setCountrys] = useState(country_store)    
 
     const [value, setValue] = useState('')
     // change value
@@ -30,10 +26,7 @@ function Country(props) {
         // call api -> recod{_id, .....}
         callApi('country', 'POST', { 'name': value })
             .then(res => {
-                //console.log('res', res.data)
-                // add to store { _id,...}
-                dispatch(action.addCountry(res.data.country))
-                //console.log(res.data.country)
+                //console.log('res', res.data)                                            
             })
         setValue('')
         //console.log('store', country_store)		
@@ -45,9 +38,7 @@ function Country(props) {
         callApi(`country/${country._id}`, 'DELETE', null)
             .then(res => {
                 //console.log('res', res.data._id)
-                // remove in store { _id,...}
-                dispatch(action.delCountry(res.data._id))
-                //console.log(res.data.country)
+                // remove in store { _id,...}                
             })
     }
     return (

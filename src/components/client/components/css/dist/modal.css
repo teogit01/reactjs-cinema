@@ -1,0 +1,50 @@
+.wrap-modal {
+  position: relative;
+  top: 150px;
+}
+.wrap-modal .style-modal {
+  min-height: 300px;
+  padding: 20px;
+}
+.wrap-modal .style-modal textarea {
+  width: 100%;
+  height: 80px;
+  border-radius: 5px;
+  border: 1px solid #ddd;
+}
+.wrap-modal .style-modal textarea:focus {
+  --outline-color: red;
+  outline: none;
+  box-shadow: 0px 0px 5px red;
+}
+.wrap-modal .style-modal .point {
+  font-size: 40px;
+  color: #7ed321;
+  font-weight: bold;
+  text-align: center;
+}
+.wrap-modal .style-modal .star {
+  text-align: center;
+  margin-bottom: 10px;
+}
+.wrap-modal .style-modal .star .star-item {
+  opacity: 0.5;
+  width: 40px;
+  padding: 0 2px;
+}
+.wrap-modal .style-modal .star:hover {
+  cursor: pointer;
+}
+.wrap-modal .style-modal .star .actived {
+  opacity: 1;
+}
+.wrap-modal .style-modal .button {
+  width: 100%;
+  text-align: right;
+  margin-top: 10px;
+}
+.wrap-modal .style-modal .button .dang {
+  width: 130px;
+  color: #fff;
+  background-color: red;
+}
